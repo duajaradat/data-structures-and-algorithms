@@ -269,10 +269,13 @@ You DO NOT need to use your solution to Challenge 9 in completing Challenge 10.
 const sortSchedule = (arr) => {
   // Solution code here...
   let days = {
+    'saturday': 0,
+    'sunday': 1,
     'Monday': 2,
     'Tuesday': 3,
     'Wednesday': 4,
-    'Friday': 5,
+    'thursday': 5,
+    'Friday': 6,
   }
   return arr.sort((a, b) => {
     if (a.dayOfWeek === b.dayOfWeek) {
