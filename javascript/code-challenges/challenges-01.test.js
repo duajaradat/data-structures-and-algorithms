@@ -10,103 +10,117 @@ Use `forEach` to loop over the input array and work with each value.  Push the n
 
 const addOne = (arr) => {
   // Solution code here...
-let arr2 =[]
-arr.forEach(item=>
-arr2.push(item+1)
-)
-return arr2;
+  let newArr = [];
+  arr.forEach(value =>
+    newArr.push(value + 1))
+  return newArr;
 };
 
 
 /* ------------------------------------------------------------------------------------------------
 CHALLENGE 2
-
+ 
 Write a function named `addExclamation` that takes an array of strings, and returns a new array of the same strings with an "!" added to the end.
-
+ 
 Use `forEach` to loop over the input array. Modify each string, and add the updated value into a local array. Return the local array;
 ------------------------------------------------------------------------------------------------ */
 
 const addExclamation = (arr) => {
   // Solution code here...
-  let arr2 =[]
-  arr.forEach(string=> arr2.push(`${string}!`))
-  return arr2;
+  let newArray = [];
+  arr.forEach(value => {
+    newArray.push(`${value}!`)
+  })
+  return newArray;
 };
+
 
 /* ------------------------------------------------------------------------------------------------
 CHALLENGE 3
-
+ 
 Write a function named `allUpperCase` that takes an array of strings, and returns a new array of the strings converted to upper case.
-
+ 
 Use `forEach` to loop over the input array. The modified strings should each be added into a local array. Return that local array.
 ------------------------------------------------------------------------------------------------ */
 
 const allUpperCase = (arr) => {
   // Solution code here...
-  let arr2 =[]
-  arr.forEach(item=> arr2.push(item.toUpperCase()))
+  let arr2 = [];
+  arr.forEach(value => {
+    arr2.push(value.toUpperCase())
+  });
   return arr2;
 };
 
+
+
+
 /* ------------------------------------------------------------------------------------------------
 CHALLENGE 4
-
+ 
 Write a function named `greeting` that takes in a single string and returns the string in all uppercase letters, and followed by an "!".
-
+ 
 Then, write a function named `speaker` that takes in an array of strings and a callback function. 
-
+ 
 Use `forEach` to build a new array of strings, each string modified by the callback. Return the new array. 
 ------------------------------------------------------------------------------------------------ */
 
 const greeting = (word) => {
   // Solution code here...
   return `${word.toUpperCase()}!`;
+
 };
 
 const speaker = (words, callback) => {
   // Solution code here...
-  let newWords=[];
-  words.forEach(item=>{
-    newWords.push(callback(item));
-  })
-  return newWords;
+  let newArr = [];
+  words.forEach(value => {
+    newArr.push(callback(value));
+  });
+
+  return newArr;
 };
+
+
 
 /* ------------------------------------------------------------------------------------------------
 CHALLENGE 5
-
+ 
 Write a function named addValues that takes in an array and a value and pushes the value into the array. This function does not need a return statement.
-
+ 
 Then, write a function named addNumbers that takes in four arguments:
   - A number to be added to an array
   - An array into which the number should be added
   - The number of times the number should be added
   - A callback function to use to add the numbers to the array (Hint: you already defined it)
-
+ 
 Within the addNumbers function, invoke the callback function as many times as necessary, based on the third argument of the addNumbers function.
-
+ 
 Return the modified array.
 ------------------------------------------------------------------------------------------------ */
 
 const addValues = (arr, value) => {
   // Solution code here...
- arr.push(value);
+  arr.push(value);
+
 };
 
 const addNumbers = (num, arr, times, callback) => {
   // Solution code here...
-  for (let i=1 ; i<=times ; i++){
-     callback(arr,num);
+  for (let i = 1; i <= times; i++) {
+    callback(arr, num)
   }
   return arr;
 };
 
+
+
 /* ------------------------------------------------------------------------------------------------
-
+ 
 CHALLENGE 6
-
+ 
 Write a function named createList that takes in an array of the current store intentory.
-
+ 
 The inventory is formatted like this:
 [
   { name: 'apples', available: true },
@@ -115,7 +129,7 @@ The inventory is formatted like this:
   { name: 'bananas', available: true },
   { name: 'blueberries', available: false }
 ]
-
+ 
 This function should use forEach to populate your grocery list based on the store's inventory. If the item is available, add it to your list. Return the final list.
 ------------------------------------------------------------------------------------------------ */
 
@@ -132,55 +146,57 @@ This function should use forEach to populate your grocery list based on the stor
 // };
 const createList = (availableItems) => {
   // Solution code here...
-  let list =[];
-  availableItems.forEach(item=>{
-    if (item.available){
-      list.push(item.name);
+  let newArr = [];
+  availableItems.forEach(item => {
+    if (item.available === true) {
+      newArr.push(item.name);
     }
-  })
-  return list;
+  });
 
+  return newArr;
 };
+
 /* ------------------------------------------------------------------------------------------------
 STRETCH - CHALLENGE 7
-
+ 
 Write a function named fizzbuzz that takes in an array of numbers.
-
+ 
 Iterate over the array using forEach to determine the output based on several rules:
   - If a number is divisible by 3, add the word "Fizz" to the output array.
   - If the number is divisible by 5, add the word "Buzz" to the output array.
   - If the number is divisible by both 3 and 5, add the phrase "Fizz Buzz" to the output array.
   - Otherwise, add the number to the output array.
-
+ 
 Return the resulting output array.
 ------------------------------------------------------------------------------------------------ */
 
 const fizzbuzz = (arr) => {
   // Solution code here...
-  let outputArr =[];
- arr.forEach(input=>{
-  if (input%3 === 0 && input%5 === 0){
-    outputArr.push("Fizz Buzz")
-  }else if(input%3 === 0){
-     outputArr.push("Fizz");
-   }else if (input%5 === 0){
-    outputArr.push("Buzz");
-   }else {
-    outputArr.push(input);
-   }
- })
- return outputArr;
+  let newarr = [];
+  arr.forEach(value => {
+    if (value % 3 === 0 && value % 5 !== 0) {
+      newarr.push("Fizz")
+    } else if (value % 5 === 0 && value % 3 !== 0) {
+      newarr.push("Buzz")
+    } else if (value % 5 === 0 && value % 3 === 0) {
+      newarr.push("Fizz Buzz")
+    } else {
+      newarr.push(value)
+    }
+  })
+  return newarr;
 };
+
 
 /* ------------------------------------------------------------------------------------------------
 TESTS
-
+ 
 All the code below will verify that your functions are working to solve the challenges.
-
+ 
 DO NOT CHANGE any of the below code.
-
+ 
 Run your tests from the console: jest challenges-01.test.js
-
+ 
 ------------------------------------------------------------------------------------------------ */
 
 describe("Testing challenge 1", () => {
