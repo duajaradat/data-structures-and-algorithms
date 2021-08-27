@@ -24,13 +24,22 @@ Returns: ['dyoll', 'eimaj'];
 
 const getNames = (arr) => {
   // Solution code here...
-  let newArr = arr.map(person => person.name.split("").reverse());
-  // console.log(newArr);
-  let reversedArr = newArr.map(ele => ele.join(''));
-  // console.log(reversedArr);
-  return reversedArr;
+  let newArr = arr.map(obj => {
+    return obj.name.split('').reduce((acc, letter) => {
+      return letter + acc
+    })
+  })
+  return newArr;
+
 };
 
+
+
+// let newArr = arr.map(person => person.name.split("").reverse());
+// // console.log(newArr);
+// let reversedArr = newArr.map(ele => ele.join(''));
+// // console.log(reversedArr);
+// return reversedArr;
 /* ------------------------------------------------------------------------------------------------
 CHALLENGE 2
 
@@ -40,10 +49,15 @@ Write a function that appends ' The end.' to a string, and returns the modified 
 
 const appendTheEnd = (str) => {
   // Solution code here...
-  let endStr = `${str} The end.`;
-  return endStr;
+  let newStr = str
+  newStr = `${str} The end.`
+  return newStr;
 };
 
+
+
+// let endStr = `${str} The end.`;
+//   return endStr;
 /* ------------------------------------------------------------------------------------------------
 CHALLENGE 3
 
@@ -59,11 +73,16 @@ console.log(a) prints [1, 2, 3, 1]
 
 const appendFirstToLast = (arr) => {
   // Solution code here...
-  let newArr = arr;
-  newArr.push(arr[0]);
-  return newArr;
+  return arr.push(arr[0])
+
 };
 
+
+
+
+// let newArr = arr;
+// newArr.push(arr[0]);
+// return newArr;
 /* ------------------------------------------------------------------------------------------------
 CHALLENGE 4
 
@@ -81,11 +100,15 @@ console.log(a) prints { fullName: 'Octavia Estelle Butler', yearBorn: 1947 }
 
 const addBirthYearProperty = (obj, year) => {
   // Solution code here...
-  let newObj = obj;
-  newObj.yearBorn = year;
-  return newObj;
+  return obj.yearBorn = year
+
 };
 
+
+
+// let newObj = obj;
+// newObj.yearBorn = year;
+// return newObj;
 /* ------------------------------------------------------------------------------------------------
 CHALLENGE 5 - Stretch Goal
 
@@ -101,9 +124,14 @@ console.log(people[1].isAuthor) prints true
 
 const setStatusAsAuthor = (people) => {
   // Solution code here...
-  people.map(Object => Object.isAuthor = true);
+  people.map(person => {
+    person.isAuthor = true;
+  })
+
 };
 
+
+// people.map(Object => Object.isAuthor = true);
 /* ------------------------------------------------------------------------------------------------
 CHALLENGE 6 - Stretch Goal
 
@@ -121,11 +149,14 @@ console.log(a) prints [1, 2, 3, 4]
 
 const append = (arr1, arr2) => {
   // Solution code here...
-  arr1.push(...arr2);
-  return arr1;
-
+  return arr1.push(...arr2)
 };
 
+
+
+
+// arr1.push(...arr2);
+// return arr1;
 /* ------------------------------------------------------------------------------------------------
 TESTS
 
