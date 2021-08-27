@@ -15,9 +15,12 @@ You can assume that neither firstName nor lastName will be blank
 ------------------------------------------------------------------------------------------------ */
 const toLastNames = people => {
   // Solution code here...
-  let newArrObj = people.map(person => person.firstName + " " + person.lastName)
-  return newArrObj;
+  let newArray = people.map(person => {
+    return `${person.firstName} ${person.lastName}`
+  })
+  return newArray;
 };
+
 
 /* ------------------------------------------------------------------------------------------------
 CHALLENGE 2
@@ -28,10 +31,11 @@ Write a function named addValues that, given an array of numbers as input, uses 
 
 const addValues = (arr) => {
   // Solution code here...
-  let newArr = arr.reduce((acc, number) => acc = acc + number, 0);
-  return newArr;
+  let sum = arr.reduce((acc, val) => {
+    return acc + val;
+  }, 0)
+  return sum;
 }
-
 
 /* ------------------------------------------------------------------------------------------------
 CHALLENGE 3
@@ -47,9 +51,13 @@ Write a function named addPurchases that, given an array of objects as input, us
 
 const addPurchases = (arr) => {
   // Solution code here...
-  let totalPrice = arr.reduce((acc, object) => acc + object.purchasePrice, 0);
-  return totalPrice;
+  let total = arr.reduce((acc, value) => {
+    return acc + value.purchasePrice;
+  }, 0)
+  return total;
 };
+
+
 
 /* ------------------------------------------------------------------------------------------------
 CHALLENGE 4
@@ -61,9 +69,14 @@ Note: You may not use the array's built-in length property.
 
 const countNumberOfElements = (arr) => {
   // Solution code here...
-  let numberOfEle = arr.reduce((acc, ele) => ele ? acc + 1 : acc + 0, 0)
-  return numberOfEle;
+  let count = arr.reduce((acc, element) => {
+    if (element) {
+      return acc + 1
+    }
+  }, 0)
+  return count;
 };
+
 
 /* ------------------------------------------------------------------------------------------------
 CHALLENGE 5
@@ -124,9 +137,16 @@ let starWarsData = [{
 
 const returnNames = (arr) => {
   // Solution code here...
-  let newArr = arr.reduce((acc, character) => [...acc, character.name], [])
-  return newArr;
+  let namesArray = arr.reduce((acc, person) => {
+    return acc.concat(person.name);
+  }, [])
+  return namesArray;
 };
+
+
+
+// let newArr = arr.reduce((acc, character) => [...acc, character.name], [])
+//   return newArr;
 
 /* ------------------------------------------------------------------------------------------------
 CHALLENGE 6
@@ -138,11 +158,17 @@ Note: You must use reduce for this challenge. You may not use the built-in .reve
 
 const reversedString = (str) => {
   // Solution code here...
-  let stringOfArr = str.split('');
-  let reversedString = stringOfArr.reduce((acc, ele) => ele + acc, '');
-  return reversedString;
+  let reverse = str.split('')
+    .reduce((acc, letter) => {
+      return letter + acc
+    }, '')
+  return reverse;
 };
 
+
+// let stringOfArr = str.split('');
+// let reversedString = stringOfArr.reduce((acc, ele) => ele + acc, '');
+// return reversedString;
 /* ------------------------------------------------------------------------------------------------
 CHALLENGE 7 - Stretch Goal
  
@@ -194,11 +220,24 @@ const characters = [
 
 const countNumberOfChildren = (arr) => {
   // Solution code here...
+  let newArray = []
+  arr.map(family => {
+    if (family.children) {
+      newArray.push(...family.children)
+    }
+  })
+  let count = newArray.reduce((acc, child) => {
+    if (child) { return acc + 1 }
 
-  let numberOfChildern = arr.reduce((acc, child) => child.children ? acc + child.children.length : acc + 0, 0);
-  return numberOfChildern;
+  }, 0)
+  return count;
 };
 
+
+
+
+// let numberOfChildern = arr.reduce((acc, child) => child.children ? acc + child.children.length : acc + 0, 0);
+//   return numberOfChildern;
 /* ------------------------------------------------------------------------------------------------
 CHALLENGE 8 - Stretch Goal
  
@@ -207,11 +246,26 @@ Write a function that, given an array of numbers as input, uses reduce to calcul
 Hint: The accumulator should begin as { count: 0, sum: 0 }
 ------------------------------------------------------------------------------------------------ */
 
+
 const calculateAverage = (arr) => {
   // Solution code here...
-  let avgValue = arr.reduce((acc, value) => acc = acc + value / arr.length, 0)
-  return avgValue;
+  let count = arr.length;
+  let avg = arr.reduce((acc, val) => {
+    return acc + val / count
+  }, 0)
+  return avg
 };
+
+
+
+
+
+
+
+
+
+// let avgValue = arr.reduce((acc, value) => acc = acc + value / arr.length, 0)
+// return avgValue;
 
 /* ------------------------------------------------------------------------------------------------
 CHALLENGE 9 - Stretch Goal
@@ -232,9 +286,15 @@ const isPrime = (value) => {
 
 const countPrimeNumbers = (arr) => {
   // Solution code here...
-  let numberOfPrimeNums = arr.reduce((acc, number) => isPrime(number) ? acc + 1 : acc + 0, 0);
-  return numberOfPrimeNums;
+  let count = arr.reduce((acc, num) =>
+    (isPrime(num)) ? acc + 1 : acc + 0
+    , 0)
+  return count;
 };
+
+
+// let numberOfPrimeNums = arr.reduce((acc, number) => isPrime(number) ? acc + 1 : acc + 0, 0);
+//   return numberOfPrimeNums;
 
 /* ------------------------------------------------------------------------------------------------
 CHALLENGE 10 - Stretch Goal
@@ -282,14 +342,40 @@ const extractStat = (statName, arr) => {
   // Solution code here...
   let newObj = arr.reduce((acc, obj) => {
     if (obj.stat.name === statName) {
-      acc = obj
+      acc = obj;
     }
     return acc;
-  });
-
+  })
   return newObj;
 };
 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+// let newObj = arr.reduce((acc, obj) => {
+//   if (obj.stat.name === statName) {
+//     acc = obj
+//   }
+//   return acc;
+// });
+
+// return newObj;
 /* ------------------------------------------------------------------------------------------------
 
 const characters = [
@@ -346,16 +432,31 @@ Write a function named extractChildren that, given the array of characters from 
 
 const extractChildren = (arr) => {
   // Solution code here...
-  let newArray = arr.filter(character => character["name"].includes("a"));
-  return newArray.reduce((acc, char) => {
-    if (char.children) {
-      char.children.map(child => acc.push(child));
+  let newArray = arr.filter(char => {
+    if (char.name.includes('a')) {
+      return char;
+    }
+  })
+  return newArray.reduce((acc, value) => {
+    if (value.children) {
+      value.children.map(child => acc.push(child));
     }
     return acc;
   }, [])
 };
 
 
+
+
+
+
+// let newArray = arr.filter(character => character["name"].includes("a"));
+// return newArray.reduce((acc, char) => {
+//   if (char.children) {
+//     char.children.map(child => acc.push(child));
+//   }
+//   return acc;
+// }, [])
 
 
 /* ------------------------------------------------------------------------------------------------
