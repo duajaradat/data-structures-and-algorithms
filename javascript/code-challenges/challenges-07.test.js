@@ -26,9 +26,14 @@ let starWarsPeople = [
 
 const sortStarWarsCharacters = (starWarsArr) => {
   // Solution code here...
-  return starWarsArr.sort((a, b) => parseInt(b.height) - parseInt(a.height))
+  let newArr = starWarsArr.sort((a, b) => {
+    return b.height - a.height
+  })
+  return newArr;
 }
 
+
+// return starWarsArr.sort((a, b) => parseInt(b.height) - parseInt(a.height))
 /* ------------------------------------------------------------------------------------------------
 CHALLENGE 2
 
@@ -41,6 +46,10 @@ const removeThree = (idx, arr) => {
   return arr;
 };
 
+
+
+// arr.splice(idx, 3);
+//   return arr;
 /* ------------------------------------------------------------------------------------------------
 CHALLENGE 3
 
@@ -49,9 +58,11 @@ Write a function named joinArray that takes an array and joins all of the elemen
 
 const joinArray = (arr) => {
   // Solution code here...
-  return arr.join(" ");
+  let str = arr.join(' ');
+  return str;
 };
 
+// return arr.join(" ");
 /* ------------------------------------------------------------------------------------------------
 CHALLENGE 4
 
@@ -68,14 +79,20 @@ For example, if the input is 'Welcome', the output will be:
 const howMuchPencil = (str) => {
   let result = [];
   // Solution code here...
-  while (str) {
-    result.push(str);
-    str = str.split("").splice(1).join("")
+  for (let i = 0; i <= str.length; i++) {
+    let str2 = str.slice(i);
+    result.push(str2)
   }
-  result.push("");
   return result;
 };
 
+
+// while (str) {
+//   result.push(str);
+//   str = str.split("").splice(1).join("")
+// }
+// result.push("");
+// return result;
 /* ------------------------------------------------------------------------------------------------
 CHALLENGE 5
 
@@ -86,9 +103,12 @@ For example, wordsToCharList('gregor') returns ['g','r','e','g','o','r'].
 
 const wordsToCharList = (arr) => {
   // Solution code here..
-  return arr.split('');
+  let newArr = arr.split('')
+  return newArr;
 };
 
+
+// return arr.split('');
 
 /* ------------------------------------------------------------------------------------------------
 CHALLENGE 6
@@ -130,17 +150,59 @@ const gruffaloCrumble = {
   ]
 };
 
-
+// ingredients: [
+//   '1 medium-sized Gruffalo',
+//   '8 pounds oats',
+//   '2 pounds brown sugar',
+//   '4 pounds flour',
+//   '2 gallons pure maple syrup',
+//   '16 cups chopped nuts',
+//   '1 pound baking soda',
+//   '1 pound baking powder',
+//   '1 pound cinnamon',
+//   '6 gallons melted butter',
+//   '2 gallons fresh water',
+// ]
 const listFoods = (recipe) => {
-  let result = [];
-  // Solution code here...
-  for (let i = 0; i < recipe.ingredients.length; i++) {
-    let indx = recipe.ingredients[i].indexOf(" ", 3) + 1;
-    result.push(recipe.ingredients[i].slice(indx))
-  }
-  return result;
+
 };
 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+// let result = [];
+// // Solution code here...
+// for (let i = 0; i < recipe.ingredients.length; i++) {
+//   let indx = recipe.ingredients[i].indexOf(" ", 3) + 1;
+//   result.push(recipe.ingredients[i].slice(indx))
+// }
+// return result;
 /* ------------------------------------------------------------------------------------------------
 CHALLENGE 7 - Stretch Goal
 
@@ -150,11 +212,39 @@ You may also use other string or array methods.
 ------------------------------------------------------------------------------------------------ */
 
 const splitFoods = (recipe) => {
-  let result = [];
-  // Solution code here...
-  return result;
+
 };
 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+// let result = [];
+//   // Solution code here...
+//   return result;
 /* ------------------------------------------------------------------------------------------------
 CHALLENGE 8 - Stretch Goal
 
@@ -166,11 +256,46 @@ Return a new array containing just the verbs. For example, ['Mix until evenly di
 ------------------------------------------------------------------------------------------------ */
 
 const stepActions = (recipe) => {
-  let result = [];
-  // Solution code here...
-  return result;
+
 };
 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+// let result = [];
+// // Solution code here...
+// return result;
 /* ------------------------------------------------------------------------------------------------
 CHALLENGE 9 - Stretch Goal
 
@@ -258,26 +383,26 @@ Run your tests from the console: jest challenges-05.test.js
 
 ------------------------------------------------------------------------------------------------ */
 
-describe('Testing challenge 1', () => {
+xdescribe('Testing challenge 1', () => {
   test('It should sort the star wars characters by height from tallest to shortest', () => {
     expect(sortStarWarsCharacters(starWarsPeople)[0]['name']).toStrictEqual('Luke Skywalker');
     expect(sortStarWarsCharacters(starWarsPeople)[2]['height']).toStrictEqual('96');
   })
 });
 
-describe('Testing challenge 2', () => {
+xdescribe('Testing challenge 2', () => {
   test('It should return an array with three items removed', () => {
     expect(removeThree(2, [1, 2, 3, 4, 5, 6, 7, 8])).toStrictEqual([1, 2, 6, 7, 8]);
   });
 });
 
-describe('Testing challenge 3', () => {
+xdescribe('Testing challenge 3', () => {
   test('It should join an array', () => {
     expect(joinArray(['hello', '301', 'students'])).toStrictEqual('hello 301 students');
   });
 });
 
-describe('Testing challenge 4', () => {
+xdescribe('Testing challenge 4', () => {
   test('It should return a list of shortening words', () => {
     expect(howMuchPencil('Welcome')).toStrictEqual(['Welcome', 'elcome', 'lcome', 'come', 'ome', 'me', 'e', '']);
     expect(howMuchPencil('Welcome').length).toStrictEqual(8);
@@ -286,7 +411,7 @@ describe('Testing challenge 4', () => {
   });
 });
 
-describe('Testing challenge 5', () => {
+xdescribe('Testing challenge 5', () => {
   test('It should return an array of individual letters', () => {
     expect(wordsToCharList('Gregor')).toStrictEqual(['G', 'r', 'e', 'g', 'o', 'r']);
     expect(wordsToCharList('Gregor').length).toStrictEqual(6);
@@ -295,7 +420,7 @@ describe('Testing challenge 5', () => {
   });
 });
 
-describe('Testing challenge 6', () => {
+xdescribe('Testing challenge 6', () => {
   test('It should return a list of foods', () => {
     expect(listFoods(gruffaloCrumble)).toStrictEqual(['Gruffalo', 'oats', 'brown sugar', 'flour', 'pure maple syrup', 'chopped nuts', 'baking soda', 'baking powder', 'cinnamon', 'melted butter', 'fresh water']);
     expect(listFoods(gruffaloCrumble).length).toStrictEqual(11);
