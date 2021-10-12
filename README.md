@@ -6,4 +6,4 @@
 | ----------- | ----------- |
 |  array_reverse  |[array_reverse](https://github.com/duajaradat/data-structures-and-algorithms/blob/array-reverse/code-challenge-python/README.md)                      |
 |  array_shift  |[array_shift](https://github.com/duajaradat/data-structures-and-algorithms/tree/array-insert-shift/python/array_shift)                      |
-
+|  array_binary_shift  |[array_binary_shift]()                      |
