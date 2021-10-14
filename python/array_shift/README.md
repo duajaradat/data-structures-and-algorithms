@@ -3,7 +3,7 @@
   without using any built-in method.
 
 ## Whiteboard Process
-![shifted-list](shifted-list.jpg)
+![shifted-list](shift-array.png)
 
 ## Approach & Efficiency
  Big O:
