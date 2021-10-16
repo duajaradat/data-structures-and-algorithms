@@ -9,7 +9,7 @@ Author : Du'a Jaradat
 
 This is a collection of data structures and algorithms written in JavaScript and Python
 
-## Author: Davee Sok
+## Author: Du'a Jaradat
 
 ## Sections
 
