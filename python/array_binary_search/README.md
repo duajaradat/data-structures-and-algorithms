@@ -38,7 +38,7 @@
 
 ### Whiteboard Visual
 ***[array-binary-search algorithm]***
-  ![binary-search](code-challenge03.png)
+  ![binary-search](array-binary-search.png)
 
 
 
