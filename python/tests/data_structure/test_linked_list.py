@@ -21,3 +21,7 @@ def test_LinkedList_include_two():
 
 
 
+def test_LinkedList_insert_case_two():
+    test_LinkedList = LinkedList()
+    test_LinkedList.insert(0)
+    assert test_LinkedList.head.value==0

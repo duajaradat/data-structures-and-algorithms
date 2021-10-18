@@ -49,21 +49,7 @@ class LinkedList:
                     current_Node = current_Node.next
             return False
 
-    def __str__(self):
-        """
-        to string : fun with no arguments , used to print a string with all the values in the linked list
 
-        Arguments: none
-        Returns: a string representing all the values in the Linked List, formatted as:
-        "{ a } -> { b } -> { c } -> NULL"
-        """
-        current_Node= self.head
-        linked_list_values=''
-        while current_Node !=None:
-            linked_list_values += f"{current_Node} -> "
-            current_Node = current_Node.next
-        linked_list_values+= "NULL"
-        return linked_list_values
 
     def append(self,value):
         """
@@ -119,4 +105,20 @@ class LinkedList:
             current_Node.next=new_node
             break
           current_Node=current_Node.next
+
+    def __str__(self):
+        """
+        to string : fun with no arguments , used to print a string with all the values in the linked list
+
+        Arguments: none
+        Returns: a string representing all the values in the Linked List, formatted as:
+        "{ a } -> { b } -> { c } -> NULL"
+        """
+        current_Node= self.head
+        linked_list_values=''
+        while current_Node !=None:
+            linked_list_values += f"{current_Node} -> "
+            current_Node = current_Node.next
+        linked_list_values+= "NULL"
+        return linked_list_values
 
