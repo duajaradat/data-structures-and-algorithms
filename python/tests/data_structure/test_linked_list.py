@@ -37,4 +37,4 @@ def test_LinkedList_insertbefore():
     test_LinkedList.append(9)
     test_LinkedList.insert_after(34,1)
     test_LinkedList.insert_before(9,67)
-    assert test_LinkedList.__str__() == "{ 68 } -> { 34 } -> { 1 } -> { 6 } -> { 9 } -> { 67 } -> NULL"
+    assert str(test_LinkedList) == f"{ 68 } -> { 34 } -> { 1 } -> { 6 } -> { 67 } -> { 9 } -> NULL"

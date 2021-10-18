@@ -117,7 +117,7 @@ class LinkedList:
         current_Node= self.head
         linked_list_values=''
         while current_Node !=None:
-            linked_list_values += f"{current_Node} -> "
+            linked_list_values += f"{current_Node.value} -> "
             current_Node = current_Node.next
         linked_list_values+= "NULL"
         return linked_list_values
