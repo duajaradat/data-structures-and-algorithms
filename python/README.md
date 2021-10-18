@@ -8,4 +8,4 @@
 |  array_shift  |[array_shift](https://github.com/duajaradat/data-structures-and-algorithms/tree/array-insert-shift/python/array_shift)                      |
 |  array_binary_shift  |[array_binary_shift](https://github.com/duajaradat/data-structures-and-algorithms/tree/array-binary-search/python/array_binary_search)                      |
 |  linked-list  |[linked-list](https://github.com/duajaradat/data-structures-and-algorithms/blob/linked-list/python/linked-list/README.md)                      |
-|  linked-list  |[linked-list-intersections](https://github.com/duajaradat/data-structures-and-algorithms/blob/linked-list-insertions/python/data_structure/README.md)                      |
+|  linked-list-intersections  |[linked-list-intersections](https://github.com/duajaradat/data-structures-and-algorithms/blob/linked-list-insertions/python/data_structure/README.md)                      |
