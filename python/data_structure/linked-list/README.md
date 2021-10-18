@@ -1,10 +1,9 @@
-# Implementation: Singly Linked Lists
+# Extending an Implementation
 
 
 *Author: Du'a Jaradat*
 
 ---
-
 
 
 ### Problem Domain
