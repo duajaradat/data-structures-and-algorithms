@@ -63,7 +63,7 @@ class LinkedList:
         while current_Node !=None:
             linked_list_values+=f"{current_Node} -> "
             current_Node = current_Node.next
-        linked_list_values+="NULL"
+        linked_list_values+= "NULL"
         return linked_list_values
 
     def append(self,value):
@@ -120,9 +120,4 @@ class LinkedList:
             current_Node.next=new_node
             break
           current_Node=current_Node.next
-# if __name__ == "__main__":
-#   ll=LinkedList()
-#   ll.insert(7)
-#   ll.insert(90)
-#   print(ll.insert_after(0,90))
-#   print(ll.insert_before(0,90))
+
