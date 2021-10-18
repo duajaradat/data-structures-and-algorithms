@@ -31,17 +31,18 @@ Write the following methods for the Linked List class:
 
 
 ### Whiteboard Visual
-***[Insert method]***
+***[Append method]***
 
-***[class Node]***
+![linked_list_append](append.png)
 
-![]()
 
-![]()
+***[Insert before method]***
 
-***[Includes method]***
+![lined_list_insert_before](insert_before.png)
 
-![]()
+***[Insert after method]***
+
+![lined_list_insert_after](insert_after.png)
 ---
 
 
@@ -49,9 +50,9 @@ Write the following methods for the Linked List class:
 
 | method| Time | Space |
 |------ | :----------- | :----------- |
-| insert | O(1) |O(1) |
-| includes | O(n) |O(1) |
-
+| insert_after | O(1) |O(1) |
+| insert_before| O(1) |O(1) |
+| append| O(n) |O(1) |
 ---
 
 ### Structure and Testing

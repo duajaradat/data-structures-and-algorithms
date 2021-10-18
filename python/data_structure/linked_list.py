@@ -57,11 +57,10 @@ class LinkedList:
         Returns: a string representing all the values in the Linked List, formatted as:
         "{ a } -> { b } -> { c } -> NULL"
         """
-        current_Node=self.head
-        print(current_Node)
+        current_Node= self.head
         linked_list_values=''
         while current_Node !=None:
-            linked_list_values+=f"{current_Node} -> "
+            linked_list_values += f"{current_Node} -> "
             current_Node = current_Node.next
         linked_list_values+= "NULL"
         return linked_list_values
