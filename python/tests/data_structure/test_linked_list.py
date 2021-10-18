@@ -38,3 +38,12 @@ def test_LinkedList_insertbefore():
     test_LinkedList.insert_after(34,1)
     test_LinkedList.insert_before(9,67)
     assert str(test_LinkedList) == f"{ 68 } -> { 34 } -> { 1 } -> { 6 } -> { 67 } -> { 9 } -> NULL"
+
+def test_LinkedList_insertafter():
+    test_LinkedList=LinkedList()
+    test_LinkedList.insert(2)
+    test_LinkedList.insert(4)
+    test_LinkedList.insert(8)
+    test_LinkedList.append(9)
+    test_LinkedList.insert_after(4,1)
+    assert str(test_LinkedList) == f"{ 8 } -> { 4 } -> { 1 } -> { 2 } -> { 9 } -> NULL"
