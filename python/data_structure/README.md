@@ -67,5 +67,4 @@ Write the following methods for the Linked List class:
 - [x] Can successfully insert a node after the last node of the linked list
 
 
-### Stretch Goal
-Once you’ve achieved a working solution, write an additional method to delete a node with the given value from the linked list
+
