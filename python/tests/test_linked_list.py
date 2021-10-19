@@ -70,3 +70,10 @@ def test_LinkedList_kth_equal_to_length():
     test_LinkedList.append(9)
     test_LinkedList.linked_list_length()
     assert test_LinkedList.kthFromEnd(2) == "k is greater than the linked list"
+
+def test_LinkedList_kth_less_than_length():
+    test_LinkedList=LinkedList()
+    test_LinkedList.insert(6)
+    test_LinkedList.append(9)
+    test_LinkedList.linked_list_length()
+    assert test_LinkedList.kthFromEnd(0) == 9
