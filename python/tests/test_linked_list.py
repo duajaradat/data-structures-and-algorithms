@@ -42,3 +42,10 @@ def test_LinkedList_insertafter_two():
     test_LinkedList.append(9)
     test_LinkedList.insert_after(6,67)
     assert str(test_LinkedList) == f"{ 6 } -> { 67 } -> { 9 } -> NULL"
+
+def test_LinkedList_length():
+    test_LinkedList=LinkedList()
+    test_LinkedList.insert(6)
+    test_LinkedList.append(9)
+    test_LinkedList.linked_list_length()
+    assert test_LinkedList.linked_list_length() == 2

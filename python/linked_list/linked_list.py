@@ -102,14 +102,19 @@ class LinkedList:
                     break
                 current_Node=current_Node.next
 
+    def linked_list_length(self):
+        "a method returns the length of linked list "
+        length=0
+        if not self.head:
+            return
+        else:
+            current_Node=self.head
+            while current_Node !=None:
+                length+=1
+                current_Node=current_Node.next
+            return length
 
-    def kthFromEnd(k):
-        """
-        kth from end method takes :
-        input -> argument: a number, k, as a parameter.
 
-        output -> Return the node’s value that is k places from the tail of the linked list.
-        """
 
 
 
