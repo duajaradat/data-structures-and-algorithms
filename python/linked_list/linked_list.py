@@ -64,6 +64,27 @@ class LinkedList:
                 current_Node= current_Node.next
             current_Node.next=new_node
 
+    def insert_before(self, value , new_value):
+        """
+        insert_before method :
+        arguments: value, new value
+        adds a new node with the given new value immediately before the first node that has the value specified
+        """
+        new_node=Node(new_value)
+        if not self.includes(value):
+            return f"No value Founded"
+        elif self.head.value ==value: # edge case , if the value is in the head node
+            self.insert(new_value)
+        else:
+            current_Node=self.head
+            while current_Node.next !=None:
+                if current_Node.next.value ==value:
+                    new_node.next=current_Node.next
+                    current_Node.next=new_node
+                break
+            current_Node=current_Node.next
+
+
 
     def __str__(self):
         """
