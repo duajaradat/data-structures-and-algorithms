@@ -12,3 +12,8 @@ def test_LinkedList_str():
     test_LinkedList.insert(70)
     assert test_LinkedList.__str__() == f"{ 70 } -> { 56 } -> NULL"
 
+def test_LinkedList_append():
+    test_LinkedList = LinkedList()
+    test_LinkedList.insert(70)
+    test_LinkedList.append(56)
+    assert test_LinkedList.__str__() == f"{ 70 } -> { 56 } -> NULL"

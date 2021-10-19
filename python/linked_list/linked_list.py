@@ -48,6 +48,22 @@ class LinkedList:
                 else:
                     current_Node = current_Node.next
             return False
+    def append(self, new_value):
+        """
+        append method :
+        arguments: new value
+        Output :adds a new node with the given value to the end of the list
+        """
+        new_node=Node(new_value)
+        if not self.head :
+            new_node=self.head
+            self.head=new_node.next
+        else:
+            current_Node = self.head
+            while current_Node.next != None:
+                current_Node= current_Node.next
+            current_Node.next=new_node
+
 
     def __str__(self):
         """
