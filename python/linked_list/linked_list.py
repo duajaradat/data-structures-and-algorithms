@@ -84,6 +84,24 @@ class LinkedList:
                     break
                 current_Node=current_Node.next
 
+    def insert_after(self,value,new_value):
+        """
+        insert_after method :
+        arguments: value, new value
+        adds a new node with the given new value immediately after the first node that has the value specified
+        """
+        new_node=Node(new_value)
+        if not self.includes(value):
+            return "No Value Founded"
+        else:
+            current_Node=self.head
+            while current_Node.next !=None:
+                if current_Node.value == value:
+                    new_node.next=current_Node.next
+                    current_Node.next=new_node
+                    break
+                current_Node=current_Node.next
+
 
 
     def __str__(self):
