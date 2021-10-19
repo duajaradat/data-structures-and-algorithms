@@ -77,3 +77,11 @@ def test_LinkedList_kth_less_than_length():
     test_LinkedList.append(9)
     test_LinkedList.linked_list_length()
     assert test_LinkedList.kthFromEnd(0) == 9
+
+def test_LinkedList_kth_happy_path():
+    test_LinkedList=LinkedList()
+    test_LinkedList.insert(2)
+    test_LinkedList.insert(6)
+    test_LinkedList.append(9)
+    test_LinkedList.linked_list_length()
+    assert test_LinkedList.kthFromEnd(1) == 2
