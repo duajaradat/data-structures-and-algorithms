@@ -81,8 +81,8 @@ class LinkedList:
                 if current_Node.next.value ==value:
                     new_node.next=current_Node.next
                     current_Node.next=new_node
-                break
-            current_Node=current_Node.next
+                    break
+                current_Node=current_Node.next
 
 
 
