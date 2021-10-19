@@ -135,6 +135,14 @@ class LinkedList:
             current_Node=current_Node.next
         return current_Node.value
 
+    def zip_lists(first_LL,second_LL):
+        """
+        function called zip lists
+        Input-->Arguments: 2 linked lists
+        Output-->Return: Linked List, zipped as noted below
+        """
+
+
 
     def __str__(self):
         """
