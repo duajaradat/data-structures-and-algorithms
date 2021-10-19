@@ -124,7 +124,7 @@ class LinkedList:
         LL_length=self.linked_list_length()
 
         if LL_length ==0:
-            return "The LinkedList is empty"
+            raise  "The LinkedList is empty"
         if k >= LL_length:
             return "k is greater than the linked list"
         if k<0:

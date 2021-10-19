@@ -25,9 +25,9 @@ Write the following methods for the Linked List class:
 ### Whiteboard Visual
 ***[kth method]***
 
-![]()
+![kth-probem-domain](kth-probem-domain.png)
 
-
+![code-kth](code-kth.png)
 
 ---
 
@@ -36,18 +36,18 @@ Write the following methods for the Linked List class:
 
 | method| Time | Space |
 |------ | :----------- | :----------- |
-|  |  | |
+| kth | O(n) | O(1)|
 
 ---
 
 ### Structure and Testing
 
-- [] Where k is greater than the length of the linked list
-- [] Where k and the length of the list are the same
+- [x] Where k is greater than the length of the linked list
+- [x] Where k and the length of the list are the same
 
-- [] Where k is not a positive integer
+- [x] Where k is not a positive integer
 
-- [] Where the linked list is of a size 1
+- [x] Where the linked list is of a size 1
 
-- [] “Happy Path” where k is not at the end, but somewhere in the middle of the linked list
+- [x] “Happy Path” where k is not at the end, but somewhere in the middle of the linked list
 
