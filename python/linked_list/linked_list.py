@@ -114,10 +114,26 @@ class LinkedList:
                 current_Node=current_Node.next
             return length
 
+    def kthFromEnd(self,k):
+        """
+        kth from end method takes :
+        input -> argument: a number, k, as a parameter.
 
+        output -> Return the node’s value that is k places from the tail of the linked list.
+        """
+        LL_length=self.linked_list_length()
 
-
-
+        if LL_length ==0:
+            return "The LinkedList is empty"
+        if k >= LL_length:
+            return "k is greater than the linked list"
+        if k<0:
+            return "k is a negative number , please enter positive number"
+        current_Nodek=(LL_length-k)-1
+        current_Node=self.head
+        for i in range(current_Nodek):
+            current_Node=current_Node.next
+        return current_Node.value
 
 
     def __str__(self):

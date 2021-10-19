@@ -49,3 +49,10 @@ def test_LinkedList_length():
     test_LinkedList.append(9)
     test_LinkedList.linked_list_length()
     assert test_LinkedList.linked_list_length() == 2
+
+def test_LinkedList_kth_negative():
+    test_LinkedList=LinkedList()
+    test_LinkedList.insert(6)
+    test_LinkedList.append(9)
+    test_LinkedList.linked_list_length()
+    assert test_LinkedList.kthFromEnd(-1) == "k is a negative number , please enter positive number"
