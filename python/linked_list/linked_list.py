@@ -103,6 +103,17 @@ class LinkedList:
                 current_Node=current_Node.next
 
 
+    def kthFromEnd(k):
+        """
+        kth from end method takes :
+        input -> argument: a number, k, as a parameter.
+
+        output -> Return the node’s value that is k places from the tail of the linked list.
+        """
+
+
+
+
 
     def __str__(self):
         """
