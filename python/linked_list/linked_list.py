@@ -142,6 +142,35 @@ class LinkedList:
         Output-->Return: Linked List, zipped as noted below
         """
 
+        if first_LL.head is None and second_LL.head is None:
+            raise Exception("empty linked lists")
+        if first_LL.head is None :
+             return second_LL
+        if second_LL.head is None :
+             return first_LL
+
+        current_1=first_LL.head
+        current_2=second_LL.head
+        next_1=current_1.next
+        next_2=current_2.next
+
+        while next_1 and next_2:
+            current_1.next=current_2
+            current_2.next=next_1
+            current_1=next_1
+            current_2=next_2
+            next_1=next_1.next
+            next_2=next_2.next
+
+
+        if next_1 is None and next_2 is None:
+            current_1.next=current_2
+        elif next_1 is not None :
+            current_1.next=current_2
+            current_2.next=next_1
+        elif next_2 is not None:
+            current_2.next=current_2
+        return first_LL
 
 
     def __str__(self):
