@@ -35,7 +35,7 @@ Output-->Return: Linked List, zipped as noted below
 
 | method| Time | Space |
 |------ | :----------- | :----------- |
-|zip-two-linked-lists  | O(1) |O(1) |
+|zip-two-linked-lists  | O(n) |O(1) |
 
 
 ---
