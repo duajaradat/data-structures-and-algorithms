@@ -32,3 +32,10 @@ def test_queue_enqueue():
     queue=Queue()
     queue.enqueue(1)
     assert queue.isEmpty()==False
+
+def test_queue_enqueue2():
+    queue=Queue()
+    queue.enqueue(1)
+    queue.enqueue(3)
+    queue.enqueue(5)
+    assert queue.peek()== 1
