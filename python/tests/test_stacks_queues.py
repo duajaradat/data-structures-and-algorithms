@@ -11,3 +11,9 @@ def test_stack_pop():
     stack.push(1)
     stack.push(2)
     assert stack.pop()==2
+
+def test_stack_peek():
+    stack=Stack()
+    stack.push(1)
+    stack.push(3)
+    assert stack.pop()==3
