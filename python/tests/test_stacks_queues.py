@@ -39,3 +39,9 @@ def test_queue_enqueue2():
     queue.enqueue(3)
     queue.enqueue(5)
     assert queue.peek()== 1
+
+def test_queue_dequeue():
+    queue=Queue()
+    queue.enqueue(1)
+
+    assert queue.dequeue()==1
