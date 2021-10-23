@@ -28,3 +28,7 @@ def test_queue_isEmpty():
     queue=Queue()
     assert queue.isEmpty()==True
 
+def test_queue_enqueue():
+    queue=Queue()
+    queue.enqueue(1)
+    assert queue.isEmpty()==False
