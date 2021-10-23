@@ -103,7 +103,7 @@ class Queue:
         Returns: Value of the node located at the front of the queue
         Should raise exception when called on empty stack
         """
-        if self.is_empty():
+        if self.isEmpty():
             raise AttributeError("Empty queue")
         else:
             return self .front.value

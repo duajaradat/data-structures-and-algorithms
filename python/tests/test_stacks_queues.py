@@ -1,4 +1,4 @@
-from stacks_queues.stacks_queues import Stack
+from stacks_queues.stacks_queues import Stack,Queue
 
 def test_stack_push():
     stack=Stack()
@@ -24,4 +24,7 @@ def test_stack_isEmpty():
     stack.push(3)
     assert stack.isEmpty()==False
 
+def test_queue_isEmpty():
+    queue=Queue()
+    assert queue.isEmpty()==True
 
