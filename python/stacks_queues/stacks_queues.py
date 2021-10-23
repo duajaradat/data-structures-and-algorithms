@@ -2,6 +2,9 @@ class Node:
     def __init__(self,value):
         self.value = value
         self.next=None
+class QueueEmptyException(Exception):
+    pass
+
 
 class Stack:
 
@@ -80,7 +83,7 @@ class Queue:
         Should raise exception when called on empty queue
         """
         if self.isEmpty():
-            raise AttributeError("Queue is empty")
+            raise QueueEmptyException("Empty queue")
         else:
             temp=self.front
             self.front=self.front.next
@@ -104,7 +107,7 @@ class Queue:
         Should raise exception when called on empty stack
         """
         if self.isEmpty():
-            raise AttributeError("Empty queue")
+            raise QueueEmptyException("Empty queue")
         else:
             return self .front.value
 

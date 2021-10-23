@@ -48,10 +48,10 @@ Using a Linked List as the underlying data storage mechanism, implement both a S
 - [x] Can successfully peek the next item on the stack
 - [x] Calling pop or peek on empty stack raises exception
 - [x] Can successfully instantiate an empty stack
-- [] Can successfully enqueue into a queue
-- [] Can successfully enqueue multiple values into a queue
-- [] Can successfully dequeue out of a queue the expected value
-- [] Can successfully peek into a queue, seeing the expected value
-- [] Can successfully empty a queue after multiple dequeues
-- [] Can successfully instantiate an empty queue
-- [] Calling dequeue or peek on empty queue raises exception
+- [x] Can successfully enqueue into a queue
+- [x] Can successfully enqueue multiple values into a queue
+- [x] Can successfully dequeue out of a queue the expected value
+- [x] Can successfully peek into a queue, seeing the expected value
+- [x] Can successfully empty a queue after multiple dequeues
+- [x] Can successfully instantiate an empty queue
+- [x] Calling dequeue or peek on empty queue raises exception

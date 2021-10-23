@@ -1,4 +1,5 @@
-from stacks_queues.stacks_queues import Stack,Queue
+import pytest
+from stacks_queues.stacks_queues import Stack,Queue,QueueEmptyException
 
 def test_stack_push():
     stack=Stack()
@@ -42,6 +43,6 @@ def test_queue_enqueue2():
 
 def test_queue_dequeue():
     queue=Queue()
-    queue.enqueue(1)
-
-    assert queue.dequeue()==1
+    with pytest.raises(QueueEmptyException) as excinfo:
+        queue.dequeue()
+    assert "Empty queue" == str(excinfo.value)
