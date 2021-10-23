@@ -17,3 +17,9 @@ def test_stack_peek():
     stack.push(1)
     stack.push(3)
     assert stack.pop()==3
+
+def test_stack_isEmpty():
+    stack=Stack()
+    stack.push(1)
+    stack.push(3)
+    assert stack.isEmpty()==False
