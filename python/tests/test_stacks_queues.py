@@ -23,3 +23,5 @@ def test_stack_isEmpty():
     stack.push(1)
     stack.push(3)
     assert stack.isEmpty()==False
+
+

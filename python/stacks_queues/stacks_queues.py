@@ -50,4 +50,8 @@ class Stack:
         else:
             return False
 
+if __name__ == '__main__':
+    stack=Stack()
+    stack.peek()
+
 
