@@ -50,6 +50,66 @@ class Stack:
         else:
             return False
 
+
+class Queue:
+    def __init__(self):
+        """
+        It creates an empty Queue when instantiated
+        """
+        self.front=None
+        self.rear=None
+
+    def enqueue(self,value):
+        """
+        Arguments: value
+        adds a new node with that value to the back of the queue with an O(1) Time performance.
+        """
+        new_node=Node(value)
+        if not self.rear :
+            self.rear=new_node
+            self.front=new_node
+        else:
+            self.rear.next=new_node
+            self.rear=new_node
+
+    def dequeue(self):
+        """
+        Arguments: none
+        Returns: the value from node from the front of the queue
+        Removes the node from the front of the queue
+        Should raise exception when called on empty queue
+        """
+        if self.isEmpty():
+            raise AttributeError("Queue is empty")
+        else:
+            temp=self.front
+            self.front=self.front.next
+            temp.next=None
+        if self.front==None: # if size of queue is 1
+            self.rear=None
+        return temp.value
+    def isEmpty(self):
+        """
+        Arguments: none
+        Returns: Boolean indicating whether or not the queue is empty
+        """
+        if self.front is None and self.rear is None:
+            return True
+        else:
+            return False
+    def peek(self):
+        """
+        Arguments: none
+        Returns: Value of the node located at the front of the queue
+        Should raise exception when called on empty stack
+        """
+        if self.is_empty():
+            raise AttributeError("Empty queue")
+        else:
+            return self .front.value
+
+
+
 if __name__ == '__main__':
     stack=Stack()
     stack.peek()
