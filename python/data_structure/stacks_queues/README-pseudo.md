@@ -6,8 +6,8 @@
 ---
 
 ## Links
-[Pull Request]()
-[Code]()
+[Pull Request](https://github.com/duajaradat/data-structures-and-algorithms/pull/35)
+[Code](https://github.com/duajaradat/data-structures-and-algorithms/blob/stack-queue-pseudo/python/data_structure/stacks_queues/stack-queue-pseudo.py)
 
 ### Problem Domain
 
