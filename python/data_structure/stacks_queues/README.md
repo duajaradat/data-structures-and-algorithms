@@ -20,11 +20,11 @@ Using a Linked List as the underlying data storage mechanism, implement both a S
 
 ***[Stack]***
 
-![Stack Class](stack.png)
+![Stack Class]()
 
 ***[Queue]***
 
-![Queue Class](queue.png)
+![Queue Class]()
 
 ---
 

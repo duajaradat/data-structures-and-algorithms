@@ -1,3 +1,6 @@
+from typing import Deque
+
+
 class Node:
     """
     class to instantiate node "
@@ -71,3 +74,33 @@ class PseudoQueue:
     def __init__(self):
         self.stack_enqueue=Stack()
         self.stack_dequeue=Stack()
+
+    def enqueue(self,value):
+        """
+        enqueue method to add a value to the queue
+        Arguments: value
+        Inserts value into the PseudoQueue, using a first-in, first-out approach.
+        """
+        self.stack_enqueue.push(value)
+
+    def dequeue(self):
+        """
+        dequeue method to delete node value
+        Arguments: none
+        Extracts a value from the PseudoQueue, using a first-in, first-out approach.h
+        """
+        if self.stack_enqueue.peek() is None:
+            raise Exception('Empty PseudoQueue')
+
+
+        while  self.stack_enqueue.top:
+            popped=self.stack_enqueue.pop()
+            self.stack_dequeue.push(popped)
+        Dequed=self.stack_dequeue.pop()
+
+        while  self.stack_dequeue.top:
+            popped=self.stack_dequeue.pop()
+            self.stack_enqueue.push(popped)
+        Dequed=self.stack_enqueue.pop()
+
+        return Dequed
