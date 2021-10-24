@@ -63,3 +63,11 @@ class Stack:
             return True
         else:
             return False
+
+class PseudoQueue:
+    """
+    class instantiate 2 Stack instances to create and manage the queue
+    """
+    def __init__(self):
+        self.stack_enqueue=Stack()
+        self.stack_dequeue=Stack()
