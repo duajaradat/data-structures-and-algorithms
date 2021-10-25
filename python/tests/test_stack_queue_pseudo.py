@@ -18,6 +18,9 @@ def test_dequeue_an_empty_queue():
     with pytest.raises(Exception):
         new_pseudo.dequeue()
 
+
+
+
 @pytest.fixture
 def pseudo():
     pseudo=PseudoQueue()
