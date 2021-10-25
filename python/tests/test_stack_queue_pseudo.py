@@ -8,12 +8,15 @@ def test_enqueue_one_value():
     expected="Du'a"
     assert actual==expected
 
-
+def test_endequeue_one_values(pseudo):
+    actual=pseudo.dequeue()
+    expected="c"
+    assert actual == expected
 
 @pytest.fixture
 def pseudo():
     pseudo=PseudoQueue()
     pseudo.enqueue("a")
     pseudo.enqueue("b")
-    pseudo.enqueue("b")
+    pseudo.enqueue("c")
     return pseudo
