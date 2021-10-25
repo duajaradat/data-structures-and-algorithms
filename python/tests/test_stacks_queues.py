@@ -59,6 +59,10 @@ def test_queue_dequeue_expected_value():
     queue3.enqueue(4)
     assert queue3.dequeue() == 4
 
-# Can successfully dequeue out of a queue the expected value
+def test_queue_peek():
+    queue3=Queue()
+    queue3.enqueue(10)
+    assert queue3.peek() == 10
+
 # Can successfully peek into a queue, seeing the expected value
 # Can successfully empty a queue after multiple dequeues
