@@ -49,12 +49,12 @@ class Stack:
         Arguments: none
         Returns: Value of the node located at the top of the stack
         """
-        if self.isEmpty():
+        if self.is_empty():
             raise StackEmptyException("Empty Stack")
         else:
             return self.top.value
 
-    def isEmpty(self):
+    def is_empty(self):
         """
         isEmpty method to check if the stack is empty or not.
         Arguments: none
