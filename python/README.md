@@ -13,3 +13,4 @@
 |  linked-lists-zip  |[linked-lists-zip](https://github.com/duajaradat/data-structures-and-algorithms/blob/linked-list-zip/python/linked_list/README-zip.md)                      |
 |  Stacks-Queues  |[Stacks-Queues](https://github.com/duajaradat/data-structures-and-algorithms/blob/stack-and-queue/python/stacks_queues/README.md)                      |
 |  Queue using two Stacks  |[Queue using two Stacks](https://github.com/duajaradat/data-structures-and-algorithms/blob/stack-queue-pseudo/python/data_structure/stacks_queues/README-pseudo.md)                      |
+|  Animal Shelter  |[Animal Shelter](https://github.com/duajaradat/data-structures-and-algorithms/blob/stack-queue-animal-shelter/python/code_challenges/animal_shelter/README.md)                      |
