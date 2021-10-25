@@ -6,8 +6,9 @@
 ---
 
 ## Links
-[Pull Request](https://github.com/duajaradat/data-structures-and-algorithms/pull/35)
-[Code](https://github.com/duajaradat/data-structures-and-algorithms/blob/stack-queue-pseudo/python/data_structure/stacks_queues/stack-queue-pseudo.py)
+- [Pull Request](https://github.com/duajaradat/data-structures-and-algorithms/pull/35)
+
+- [Code](https://github.com/duajaradat/data-structures-and-algorithms/blob/stack-queue-pseudo/python/data_structure/stacks_queues/stack_queue_pseudo.py)
 
 ### Problem Domain
 
@@ -63,5 +64,7 @@
 ---
 
 
-
+### Whiteboard Visual
+***[Queue with two stacks]***
+![s-q-pseudo](s-q-pseudo.png)
 

@@ -1,5 +1,3 @@
-from typing import Deque
-
 
 class Node:
     """
