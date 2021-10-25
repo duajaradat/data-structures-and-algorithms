@@ -28,7 +28,7 @@ class Stack:
         pop method to remove node from the top of the stack
         """
         if not self.top:
-            raise  AttributeError('Stack is empty')
+            raise  Exception('Stack is empty')
         else:
             temp=self.top
             self.top=self.top.next
@@ -40,7 +40,7 @@ class Stack:
         peek method returns the node value at the top of stack.
         """
         if self.isEmpty():
-            raise AttributeError('Stack is empty')
+            raise Exception('Stack is empty')
         else:
             return self.top.value
 

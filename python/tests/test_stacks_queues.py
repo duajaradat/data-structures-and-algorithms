@@ -41,8 +41,20 @@ def test_queue_enqueue2():
     queue.enqueue(5)
     assert queue.peek()== 1
 
+def test_stcak_empty():
+    stack2=Stack()
+    with pytest.raises(Exception):
+        stack2.peek()
+
+    assert stack2.isEmpty()== 1
+
 def test_queue_dequeue():
     queue=Queue()
     with pytest.raises(QueueEmptyException) as excinfo:
         queue.dequeue()
     assert "Empty queue" == str(excinfo.value)
+
+# Calling pop or peek on empty stack raises exception
+# Can successfully dequeue out of a queue the expected value
+# Can successfully peek into a queue, seeing the expected value
+# Can successfully empty a queue after multiple dequeues
