@@ -87,18 +87,18 @@ class PseudoQueue:
         Arguments: none
         Extracts a value from the PseudoQueue, using a first-in, first-out approach.h
         """
-        if self.stack_enqueue.peek() is None:
+        if not self.stack_enqueue.peek():  # 1
             raise Exception('Empty PseudoQueue')
 
 
-        while  self.stack_enqueue.top:
-            popped=self.stack_enqueue.pop()
-            self.stack_dequeue.push(popped)
-        Dequed=self.stack_dequeue.pop()
+        while self.stack_enqueue.top:    # n  --> n*(1+1)=2n  --> Big O(n)
+            popped=self.stack_enqueue.pop() # 1
+            self.stack_dequeue.push(popped) # 1
+        dequed=self.stack_dequeue.pop()  # 1
 
-        while  self.stack_dequeue.top:
-            popped=self.stack_dequeue.pop()
-            self.stack_enqueue.push(popped)
-        Dequed=self.stack_enqueue.pop()
+        while self.stack_dequeue.top:  # n  --> n*(1+1)=2n --> Big O(n)
+            popped=self.stack_dequeue.pop() # 1
+            self.stack_enqueue.push(popped) # 1
+                                                     #
 
-        return Dequed
+        return dequed

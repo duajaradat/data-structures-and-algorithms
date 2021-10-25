@@ -10,7 +10,7 @@ def test_enqueue_one_value():
 
 def test_dequeue_one_values(pseudo):
     actual=pseudo.dequeue()
-    expected="c"
+    expected="a"
     assert actual == expected
 
 def test_dequeue_an_empty_queue():
