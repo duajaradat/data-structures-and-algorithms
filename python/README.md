@@ -11,4 +11,4 @@
 |  linked-list-insertions  |[linked-list-insertions](https://github.com/duajaradat/data-structures-and-algorithms/blob/code-challenge06/python/linked_list/README-BF.md)                      |
 |  linked-list-kth  |[linked-list-kth](https://github.com/duajaradat/data-structures-and-algorithms/blob/linked-list-kth/python/linked_list/README-kth.md)                      |
 |  linked-lists-zip  |[linked-lists-zip](https://github.com/duajaradat/data-structures-and-algorithms/blob/linked-list-zip/python/linked_list/README-zip.md)                      |
-|  Stacks-Queues  |[Stacks-Queues](https://github.com/duajaradat/data-structures-and-algorithms/blob/stack-and-queue/python/data-structure/stacks_queues/README.md)                      |
+|  Stacks-Queues  |[Stacks-Queues](https://github.com/duajaradat/data-structures-and-algorithms/blob/stack-and-queue/python/data_structure/stacks_queues/README.md)                      |
