@@ -1,5 +1,5 @@
 import pytest
-from stacks_queues.stacks_queues import Stack,Queue,QueueEmptyException
+from data_structure.stacks_queues.stacks_queues import Stack,Queue,QueueEmptyException
 
 def test_stack_push():
     stack=Stack()
