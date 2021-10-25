@@ -64,5 +64,17 @@ def test_queue_peek():
     queue3.enqueue(10)
     assert queue3.peek() == 10
 
-# Can successfully peek into a queue, seeing the expected value
+def test_queue_empty_after_multipule_dequeues():
+    queue4=Queue()
+    queue4.enqueue(10)
+    queue4.enqueue(11)
+    queue4.enqueue(12)
+    queue4.enqueue(13)
+    queue4.dequeue()
+    queue4.dequeue()
+    queue4.dequeue()
+    queue4.dequeue()
+    assert queue4.isEmpty() == True
+
+
 # Can successfully empty a queue after multiple dequeues
