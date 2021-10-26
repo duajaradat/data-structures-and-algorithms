@@ -10,7 +10,7 @@ class Animal:
 class Dog:
     def __init__(self,dog_name):
         self.name=dog_name
-        self.type ='Dog'
+        self.pref ='Dog'
 
 class Cat:
     def __init__(self,cat_name):
