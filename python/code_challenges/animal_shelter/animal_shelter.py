@@ -7,6 +7,9 @@ class Animal:
         self.next = None
 
 
+
+
+
 class Animal_Shelter:
     """
     a class which holds only dogs and cats objects.
@@ -48,10 +51,10 @@ class Animal_Shelter:
         if self.is_empty():
             raise Exception("Animal Shelter is Empty")
 
-        if  self.front.value==pref:
-            removed_node=self.front.value
-            self.front=self.front.next
-            removed_node.next=None
+        if  self.front.value==pref:   #  1
+            removed_node=self.front.value  #  1
+            self.front=self.front.next   #  1
+            removed_node.next=None     #  1
             return removed_node
 
     def __str__(self):
