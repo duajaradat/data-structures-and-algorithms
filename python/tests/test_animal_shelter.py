@@ -12,3 +12,4 @@ def test_dequeue_an_empty_queue():
     with pytest.raises(Exception):
         animal2.dequeue()
 
+
