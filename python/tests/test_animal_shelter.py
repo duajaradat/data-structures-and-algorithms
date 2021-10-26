@@ -1,11 +1,12 @@
 import pytest
 
-from code_challenges.animal_shelter.animal_shelter import Animal,Animal_Shelter
+from code_challenges.animal_shelter.animal_shelter import Animal,Animal_Shelter,Dog,Cat
 
-def test_enqueue_one_animal():
+def test_enqueue_one_animal_dog_type():
+    pomeranian=Dog('pomeranian')
     new_animal=Animal_Shelter()
-    new_animal.enqueue("Pomeranian")
-    assert new_animal.front.value =="Pomeranian"
+    new_animal.enqueue(pomeranian)
+    assert new_animal.front.value.type =="Dog"
 
 def test_dequeue_an_empty_queue():
     animal2=Animal_Shelter()

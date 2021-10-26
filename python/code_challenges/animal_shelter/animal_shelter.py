@@ -7,7 +7,15 @@ class Animal:
         self.next = None
 
 
+class Dog:
+    def __init__(self,dog_name):
+        self.name=dog_name
+        self.type ='Dog'
 
+class Cat:
+    def __init__(self,cat_name):
+        self.name=cat_name
+        self.pref ='Cat'
 
 class Animal_Shelter:
     """
@@ -50,15 +58,21 @@ class Animal_Shelter:
         if self.is_empty():
             raise Exception("Animal Shelter is Empty")
 
-        if  self.front.value==pref:   #  1
+
+        if  self.front.value.__class__.__name__==pref:   #  1
             removed_node=self.front.value  #  1
             self.front=self.front.next   #  1
             removed_node.next=None     #  1
-            return removed_node
+            return removed_node.name
 
 
 
 
+
+if __name__ == '__main__':
+    bondoq=Cat('bondoq')
+    animal1=Animal_Shelter(bondoq)
+    animal1.enqueue(bondoq)
 
 
 
