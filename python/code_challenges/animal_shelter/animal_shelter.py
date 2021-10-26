@@ -9,7 +9,6 @@ class Animal:
 
 
 
-
 class Animal_Shelter:
     """
     a class which holds only dogs and cats objects.
@@ -55,7 +54,8 @@ class Animal_Shelter:
             removed_node=self.front.value  #  1
             self.front=self.front.next   #  1
             removed_node.next=None     #  1
-            return removed_node
+            return removed_node.name
+
 
     def __str__(self):
         name=self.front
