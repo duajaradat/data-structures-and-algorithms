@@ -14,7 +14,7 @@
 
 ## White Board Process
 
-![Brackes]()
+![Brackets](brackets.png)
 
 ---
 
