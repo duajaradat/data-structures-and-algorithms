@@ -14,7 +14,7 @@
 
 ## White Board Process
 
-![Animal Queue]()
+![Brackes]()
 
 ---
 
@@ -35,6 +35,7 @@ Square Brackets : []
 Curly Brackets : {}
 
 ---
+
 
 ### Big O:
 
