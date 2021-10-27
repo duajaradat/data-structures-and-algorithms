@@ -6,3 +6,7 @@ def test_one():
 
 def test_two():
     assert validate_brackets('[({\}]')==False
+
+
+def test_three():
+    assert validate_brackets('()[[Extra Characters]]')==True
