@@ -10,3 +10,6 @@ def test_two():
 
 def test_three():
     assert validate_brackets('()[[Extra Characters]]')==True
+
+def test_four():
+    assert validate_brackets('Extra Characters')==True
