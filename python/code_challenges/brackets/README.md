@@ -39,12 +39,7 @@ Curly Brackets : {}
 
 ### Big O:
 
-Enqueue
+- Time: O(n)
+- Space: O(1)
 
-- Time: O()
-- Space: O()
 
-Dequeue
-
-- Time: O()
-- Space: O()
