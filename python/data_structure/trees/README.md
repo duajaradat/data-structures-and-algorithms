@@ -57,9 +57,9 @@
 ### Big O Analysis
 
 
-| Time | Space |
-| :----------- | :----------- |
-| O() | O() |
+|| Time | Space |
+|:-----------| :----------- | :----------- |
+|DFS| O(n) | O(n) |
 
 
 ---
@@ -67,7 +67,10 @@
 
 ### Whiteboard Visual
 ***[Binary Search Tree]***
-![Binary Tree]()
+![Breadth First Search](dfs.png)
+![Pre_order]()
+![In_order]()
+![Post_order]()
 ![Binary Search Tree]()
 
 
