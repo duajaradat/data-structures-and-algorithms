@@ -68,3 +68,24 @@ class BinaryTree:
         walk(self.root)
 
         return pre_output
+
+    def in_order(self):
+        """
+        in_order method is one of depth first search ways input -> None
+        return -> list of tree items (left ,root, right)
+        """
+        in_output = []
+
+        def walk(node):
+
+            if node.left:
+                walk(node.left)
+
+            in_output.append(node.data)
+
+            if node.right:
+                walk(node.right)
+
+        walk(self.root)
+
+        return in_output
