@@ -67,6 +67,7 @@
 
 ### Whiteboard Visual
 ***[Binary Search Tree]***
+![Binary Tree]()
 ![Binary Search Tree]()
 
 

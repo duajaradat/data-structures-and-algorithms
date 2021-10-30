@@ -29,7 +29,7 @@ class BinaryTree:
 
     def breadth(self):
         """
-        breadth first search method that returns list of values that Contains
+        breadth first search method use level search that returns list of values that Contains
         input -> None
         return -> list
         """
@@ -47,3 +47,24 @@ class BinaryTree:
             if front.right :
                 dfs.enqueue(front.right)
         return dfs_output
+
+
+    def pre_order(self):
+        """
+        pre_order method is one of depth first search ways input -> None
+        return -> list of tree items (root , left , right)
+        """
+        pre_output = []
+
+        def walk(node):
+            pre_output.append(node.data)
+
+            if node.left:
+                walk(node.left)
+
+            if node.right:
+                walk(node.right)
+
+        walk(self.root)
+
+        return pre_output
