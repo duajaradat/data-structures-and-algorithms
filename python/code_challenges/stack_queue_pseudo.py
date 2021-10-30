@@ -102,3 +102,8 @@ class PseudoQueue:
                                                      #
 
         return dequed
+if __name__ == '__main__':
+    queue=PseudoQueue()
+    queue.enqueue(1)
+    queue.enqueue(10)
+    print(queue.dequeue())
