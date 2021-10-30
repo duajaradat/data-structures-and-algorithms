@@ -12,6 +12,7 @@ class Queue:
         self.collection = collection
 
     def enqueue(self,value):
+
         self.collection.append(value)
 
     def dequeue(self):
@@ -39,7 +40,7 @@ class BinaryTree:
 
         while dfs.peek():
             front=dfs.dequeue()
-            dfs_output+=[front.data]
+            dfs_output.append(front.data)
 
             if front.left :
                 dfs.enqueue(front.left)
