@@ -89,3 +89,23 @@ class BinaryTree:
         walk(self.root)
 
         return in_output
+
+    def post_order(self):
+        """
+        post_order method is one of depth first search ways input -> None
+        return -> list of tree items (left , right ,root)
+        """
+        post_output = []
+
+        def walk(node):
+            if node.left:
+                walk(node.left)
+
+            if node.right:
+                walk(node.right)
+
+            post_output.append(node.data)
+
+        walk(self.root)
+
+        return post_output
