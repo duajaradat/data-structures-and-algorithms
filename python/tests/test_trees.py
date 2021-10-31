@@ -1,5 +1,5 @@
 import pytest
-from data_structure.trees.trees import Node ,Queue ,BinaryTree
+from data_structure.trees.trees import Node ,Queue ,BinaryTree,BinarySearch
 
 def test_dfs():
     node_a = Node(1)
@@ -77,3 +77,8 @@ def test_post_order():
     expected = [4,5,2,6,3,1]
     actual = tree.post_order()
     assert actual == expected
+
+def test_add_value():
+    tree = BinarySearch()
+    tree.add(4)
+    assert tree.root.data == 4
