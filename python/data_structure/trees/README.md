@@ -70,7 +70,7 @@
 ![Breadth First Search](dfs.png)
 ![Pre_order](pre_order.png)
 ![In_order](in_order.png)
-![Post_order]()
+![Post_order](post_order.png)
 ![Binary Search Tree]()
 
 
