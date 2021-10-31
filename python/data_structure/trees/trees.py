@@ -1,3 +1,4 @@
+import math
 class Node:
     """
     Node class that has properties for the value stored in the node
@@ -26,6 +27,7 @@ class Queue:
 class BinaryTree:
     def __init__(self):
         self.root = None
+        self.max = -math.inf
 
     def breadth(self):
         """
@@ -109,6 +111,25 @@ class BinaryTree:
         walk(self.root)
 
         return post_output
+
+    def  max_value(self):
+        """
+        find maximum value
+            - Arguments: none
+            - Returns: max number
+        """
+        if not self.root :
+            raise Exception('Empty Tree')
+        def walk(node):
+            if node.data > self.max :
+                self.max = node.data
+            if node.left:
+                walk(node.left)
+            if node.right:
+                walk(node.right)
+
+        walk(self.root)
+        return self.max
 
 
 class BinarySearch(BinaryTree):

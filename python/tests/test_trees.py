@@ -100,3 +100,12 @@ def test_contains_value2():
     tree.add(-1)
     tree.add(12)
     assert tree.contains(-1) == True
+
+def test_max_value():
+    tree = BinarySearch()
+    tree.add(4)
+    tree.add(10)
+    tree.add(1)
+    tree.add(-1)
+    tree.add(12)
+    assert tree.max_value() == 12
