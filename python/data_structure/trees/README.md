@@ -60,16 +60,16 @@
 || Time | Space |
 |:-----------| :----------- | :----------- |
 |DFS| O(n) | O(n) |
-
-
+|pre| O(n) | O(n) |
+|in| O(n) | O(n) |
 ---
 
 
 ### Whiteboard Visual
 ***[Binary Search Tree]***
 ![Breadth First Search](dfs.png)
-![Pre_order]()
-![In_order]()
+![Pre_order](pre_order.png)
+![In_order](in_order.png)
 ![Post_order]()
 ![Binary Search Tree]()
 
