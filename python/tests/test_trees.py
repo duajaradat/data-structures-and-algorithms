@@ -109,3 +109,13 @@ def test_single_root_node():
     tree = BinarySearch()
     tree.add(4)
     assert tree.root.data == 4
+#  Can successfully add a left child and right child to a single root node
+def test_left_right_childs():
+    tree = BinarySearch()
+    root_node =Node(4)
+    left_node =Node(1)
+    right_node =Node(10)
+    root_node.left = left_node
+    root_node.right = right_node
+    tree.root = root_node
+    assert tree.pre_order() == [4,1,10]
