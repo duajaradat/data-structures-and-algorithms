@@ -100,3 +100,7 @@ def test_contains_value2():
     tree.add(-1)
     tree.add(12)
     assert tree.contains(-1) == True
+
+def test_empty_tree():
+    tree = BinarySearch()
+    assert tree.root == None
