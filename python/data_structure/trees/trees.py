@@ -109,3 +109,26 @@ class BinaryTree:
         walk(self.root)
 
         return post_output
+
+
+class BinarySearch:
+    def add(self,value):
+        if not self.root:
+            self.root = Node(value)
+
+        else:
+            def walk(node):
+                if value < node.value:
+                    if not node.left:
+                        node.left = Node(value)
+                        return
+                    else:
+                        walk(node.left)
+
+                else:
+                    if not node.right:
+                        node.right = Node(value)
+                        return
+                    else:
+                        walk(node.right)
+            walk(self.root)
