@@ -68,6 +68,7 @@
 |DFS| O(n) | O(n) |
 |pre| O(n) | O(n) |
 |in| O(n) | O(n) |
+|max| O(2^n) | O(1) |
 ---
 
 
@@ -77,6 +78,6 @@
 ![Pre_order](pre_order.png)
 ![In_order](in_order.png)
 ![Post_order](post_order.png)
-
+![Max-Value](max_value_binary_tree.png)
 
 
