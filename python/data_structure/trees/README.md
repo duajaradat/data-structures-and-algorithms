@@ -25,6 +25,12 @@
          - in order
          - post order which returns an array of the values, ordered appropriately.
 
+
+    - find maximum value
+        - Arguments: none
+        - Returns: number
+
+
 - Any exceptions or errors that come from your code should be semantic, capture-able errors. For example, rather than a default error thrown by your language, your code should raise/throw a custom, semantic error that describes what went wrong in calling the methods .
 
 **- Binary Search Tree**
