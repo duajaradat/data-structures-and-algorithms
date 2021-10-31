@@ -6,7 +6,9 @@
 ---
 
 ## Links
-- [Pull Request](https://github.com/duajaradat/data-structures-and-algorithms/pull/38)
+- [Pull Request Binary Tree](https://github.com/duajaradat/data-structures-and-algorithms/pull/38)
+
+- [Pull Request max_value method](https://github.com/duajaradat/data-structures-and-algorithms/pull/39)
 
 - [Code](https://github.com/duajaradat/data-structures-and-algorithms/blob/trees/python/data_structure/trees/trees.py)
 
