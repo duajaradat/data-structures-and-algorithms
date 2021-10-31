@@ -91,3 +91,12 @@ def test_contains_value():
     tree.add(-1)
     tree.add(12)
     assert tree.contains(8) == False
+
+def test_contains_value2():
+    tree = BinarySearch()
+    tree.add(4)
+    tree.add(10)
+    tree.add(1)
+    tree.add(-1)
+    tree.add(12)
+    assert tree.contains(-1) == True
