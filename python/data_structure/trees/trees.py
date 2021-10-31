@@ -112,7 +112,18 @@ class BinaryTree:
 
 
 class BinarySearch(BinaryTree):
+    """
+    BinarySearch class is a sub-class of BinaryTree contains add and contains method
+    """
+
     def add(self,data):
+        """
+        Add method , adding a value to a tree
+        Arguments: value
+        Return: nothing
+        Adds a new node with that value in the correct location in the binary search tree.
+        """
+
         if not self.root:
             self.root = Node(data)
 
@@ -134,6 +145,11 @@ class BinarySearch(BinaryTree):
             walk(self.root)
 
     def contains(self, data):
+        """
+        Contains method show if a value is in tree or not
+        Argument: value
+        Returns: boolean indicating whether or not the value is in the tree at least once.
+        """
         if not self.root:
             return False
 
