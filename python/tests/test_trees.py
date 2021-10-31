@@ -104,3 +104,8 @@ def test_contains_value2():
 def test_empty_tree():
     tree = BinarySearch()
     assert tree.root == None
+
+def test_single_root_node():
+    tree = BinarySearch()
+    tree.add(4)
+    assert tree.root.data == 4
