@@ -82,3 +82,5 @@ def test_add_value():
     tree = BinarySearch()
     tree.add(4)
     assert tree.root.data == 4
+
+

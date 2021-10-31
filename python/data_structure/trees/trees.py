@@ -132,3 +132,24 @@ class BinarySearch(BinaryTree):
                     else:
                         walk(node.right)
             walk(self.root)
+
+    def contains(self, data):
+        if not self.root:
+            return False
+
+        else:
+            def walk(node):
+                if data == node.data:
+                    return True
+
+                if data > node.data:
+                    if node.right:
+                        return walk(node.right)
+                    else:
+                        return False
+                else:
+                    if node.left:
+                        return walk(node.left)
+                    else:
+                        return False
+            return walk(self.root)
