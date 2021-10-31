@@ -83,4 +83,11 @@ def test_add_value():
     tree.add(4)
     assert tree.root.data == 4
 
-
+def test_contains_value():
+    tree = BinarySearch()
+    tree.add(4)
+    tree.add(10)
+    tree.add(1)
+    tree.add(-1)
+    tree.add(12)
+    assert tree.contains(8) == False
