@@ -39,13 +39,3 @@ def breadth_first(tree):
                 bfs.enqueue(front.right)
         return bfs_output
 
-if __name__ == '__main__':
-    tree = BinaryTree()
-    tree = BinarySearch()
-    tree.root_node =Node(4)
-    tree.left_node =Node(1)
-    tree.right_node =Node(10)
-    tree.root_node.left = tree.left_node
-    tree.root_node.right = tree.right_node
-    tree.root =tree.root_node
-    breadth_first(tree)
