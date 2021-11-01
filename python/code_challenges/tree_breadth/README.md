@@ -25,9 +25,8 @@
 
 ### Structure and Testing
 
-- [] “Happy Path” - Expected outcome
-- [] Expected failure
-- [] Edge Case (if applicable/obvious)
+- [x] “Happy Path” - Expected outcome
+- [x] Edge Case (if applicable/obvious)
 
 
 ---
@@ -37,10 +36,10 @@
 
 || Time | Space |
 |:-----------| :----------- | :----------- |
-
+|  BFS  | O(log n)      |  O(n)         |
 ---
 
 
 ### Whiteboard Visual
 ***[Binary Search Tree]***
-![Breadth First Search]()
+![Breadth First Search](bfs.png)
