@@ -26,6 +26,8 @@ def breadth_first(tree):
         """
         bfs_output = []
         bfs =Queue()
+        if not bfs.peek:
+            raise Exception('Empty Tree')
 
         bfs.enqueue(tree.root)
 
