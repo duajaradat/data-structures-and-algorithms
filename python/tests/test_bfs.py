@@ -23,3 +23,15 @@ def test_bfs():
     actual = breadth_first(tree)
 
     assert actual == expected
+
+def test_bfs_one_value_root():
+    node_a =Node(90)
+    # creat instance of BinaryTree
+    tree = BinaryTree()
+    # define the root of tree
+    tree.root = node_a
+
+    expected = [90]
+    actual = breadth_first(tree)
+
+    assert actual == expected
