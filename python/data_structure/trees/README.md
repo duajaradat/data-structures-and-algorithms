@@ -38,7 +38,6 @@
          - Argument: value
          - Returns: boolean indicating whether or not the value is in the tree at least once.
 
-
 ---
 
 
@@ -59,7 +58,6 @@
 
 || Time | Space |
 |:-----------| :----------- | :----------- |
-|DFS| O(n) | O(n) |
 |pre| O(n) | O(n) |
 |in| O(n) | O(n) |
 ---
@@ -67,7 +65,6 @@
 
 ### Whiteboard Visual
 ***[Binary Search Tree]***
-![Breadth First Search](dfs.png)
 ![Pre_order](pre_order.png)
 ![In_order](in_order.png)
 ![Post_order](post_order.png)
