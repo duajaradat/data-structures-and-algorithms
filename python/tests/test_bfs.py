@@ -35,3 +35,9 @@ def test_bfs_one_value_root():
     actual = breadth_first(tree)
 
     assert actual == expected
+
+def test_empty_tree_edge_case():
+    # creat instance of BinaryTree
+    tree = BinaryTree()
+    with pytest.raises(Exception):
+        breadth_first()
