@@ -6,9 +6,9 @@ class TreeNode:
     Class to instanitation node
     Attribute :data , children as list
     """
-    def __init__(self,data=None):
+    def __init__(self,data=None,children=[]):
         self.data = data
-        self.children = []
+        self.children = children
 
 
 class karyTree:
@@ -23,14 +23,12 @@ class karyTree:
         """
         queue_output = []
         queue =Queue()
-        if not queue.peek():
-            return "Empty Tree"
+
 
         queue.enqueue(self.root)
 
-        while queue.peek():
+        while  queue.peek():
             front=queue.dequeue()
-            queue_output.append(front.data)
 
             for child in front.children:
                 queue.enqueue(child)
