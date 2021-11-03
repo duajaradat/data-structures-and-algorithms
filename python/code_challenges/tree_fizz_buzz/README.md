@@ -8,7 +8,7 @@
 ## Links
 - [Pull Request](https://github.com/duajaradat/data-structures-and-algorithms/pull/41)
 
-- [Code]()
+- [Code](https://github.com/duajaradat/data-structures-and-algorithms/blob/tree-fizz-buzz/python/code_challenges/tree_fizz_buzz/tree_fizz_buzz.py)
 
 ### Problem Domain
 
