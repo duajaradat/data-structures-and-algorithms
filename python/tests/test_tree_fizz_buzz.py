@@ -7,3 +7,6 @@ def test_instantiate_node():
     assert node.data == 3
 
 
+def test_instantiate_empty_k_tree():
+    tree = karyTree()
+    assert tree.root == None
