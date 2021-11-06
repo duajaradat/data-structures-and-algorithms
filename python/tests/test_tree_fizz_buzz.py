@@ -1,6 +1,6 @@
 import pytest
 
-from code_challenges.tree_fizz_buzz.tree_fizz_buzz import fizz_buzz_tree ,karyTree,TreeNode
+from code_challenges.tree_fizz_buzz.tree_fizz_buzz import fizz_buzz_tree ,karyTree,TreeNode , fizz_buzz
 
 def test_instantiate_node():
     node = TreeNode(3)
@@ -32,8 +32,13 @@ def test_bfs_k_tree():
 
 def test_fizz(new_tree):
     fizz_buzz_tree(new_tree)
-    assert new_tree.breadth_first() == [1,2,"Fizz",4,"Buzz","Fizz",7,8,"Fizz"]
+    assert new_tree.breadth_first() == ["1","2","Fizz","4","Buzz","Fizz","7","8","Fizz"]
 
+def test_fizz_buzz_fun_returns_fizz():
+    expected = "Fizz"
+    actual = fizz_buzz(3)
+
+    assert actual == expected
 
 @pytest.fixture
 def new_tree():

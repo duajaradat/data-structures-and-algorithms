@@ -34,7 +34,16 @@ class karyTree:
             queue_output.append(front.data)
         return queue_output
 
+def fizz_buzz(number):
 
+    if not number % 15:
+        return "FizzBuzz"
+    elif not  number%3 :
+        return "Fizz"
+    elif not number%5:
+        return "Buzz"
+    else:
+        return str(number)
 
 def fizz_buzz_tree(k_ary_tree : karyTree):
     """
@@ -50,16 +59,7 @@ def fizz_buzz_tree(k_ary_tree : karyTree):
 
     while not queue.isEmpty():
         front=queue.dequeue()
-
-        if not front.data % 15:
-            front.data = "FizzBuzz"
-        elif not  front.data%3 :
-            front.data = "Fizz"
-        elif not front.data%5:
-            front.data = "Buzz"
-        else:
-            front.data = front.data
-
+        front.data = fizz_buzz(front.data)
         for child in front.children:
             queue.enqueue(child)
 
