@@ -37,10 +37,11 @@ Conduct “FizzBuzz” on a k-ary tree while traversing through it to create a n
 
 || Time | Space |
 |:-----------| :----------- | :----------- |
-|   |       |           |
+| O(n^2)  | O(h) where h is the height of the tree       |           |
 ---
 
 
 ### Whiteboard Visual
 ***[Fizz Buzz]***
-![Fizz Buzz]()
+![Fizz Buzz](fizzbuzz_tree_visual.png)
+![Fizz Buzz](fizzbuzz_tree_algorithm.png)
