@@ -29,3 +29,22 @@ def test_bfs_k_tree():
     node1 = TreeNode(1,[node2,node3])
     tree = karyTree(node1)
     assert tree.breadth_first() == [1,2,3,4,5,6,7,8,9]
+
+def test_fizz(new_tree):
+    fizz_buzz_tree(new_tree)
+    assert new_tree.breadth_first() == [1,2,"Fizz",4,"Buzz","Fizz",7,8,"Fizz"]
+
+
+@pytest.fixture
+def new_tree():
+    node4 =TreeNode(4)
+    node5 =TreeNode(5)
+    node6 =TreeNode(6)
+    node7 =TreeNode(7)
+    node8 =TreeNode(8)
+    node9 =TreeNode(9)
+    node2=TreeNode(2,[node4,node5,node6,node7])
+    node3= TreeNode(3,[node8,node9])
+    node1 = TreeNode(1,[node2,node3])
+    new_tree = karyTree(node1)
+    return new_tree

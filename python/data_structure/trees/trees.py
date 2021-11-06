@@ -74,6 +74,8 @@ class BinaryTree:
         return post_output
 
 
+
+
 class BinarySearch(BinaryTree):
     """
     BinarySearch class is a sub-class of BinaryTree contains add and contains method
@@ -132,3 +134,5 @@ class BinarySearch(BinaryTree):
                     else:
                         return False
             return walk(self.root)
+
+

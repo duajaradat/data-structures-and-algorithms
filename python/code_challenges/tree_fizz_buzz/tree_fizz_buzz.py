@@ -1,5 +1,4 @@
-from code_challenges.tree_breadth.bfs import Queue
-
+from data_structure.stacks_queues.stacks_queues import Queue
 
 class TreeNode:
     """
@@ -21,13 +20,13 @@ class karyTree:
         input -> tree
         return -> list
         """
-        queue_output = []
         queue =Queue()
+        queue_output = []
 
 
         queue.enqueue(self.root)
 
-        while  queue.peek():
+        while not queue.isEmpty():
             front=queue.dequeue()
 
             for child in front.children:
@@ -43,29 +42,28 @@ def fizz_buzz_tree(k_ary_tree : karyTree):
     Arguments: k-ary tree
     Return: new k-ary tree
     """
-    queue = Queue()
     if not k_ary_tree.root:
         return 'Tree is empty'
 
+    queue = Queue()
     queue.enqueue(k_ary_tree.root)
 
-    while queue.peek():
+    while not queue.isEmpty():
         front=queue.dequeue()
 
-        if front.data % 5 and front.data % 3 :
+        if not front.data % 15:
             front.data = "FizzBuzz"
-        elif front.data % 3 :
+        elif not  front.data%3 :
             front.data = "Fizz"
-        elif front.data % 5 :
+        elif not front.data%5:
             front.data = "Buzz"
+        else:
+            front.data = front.data
 
-        for child in front.children :
+        for child in front.children:
             queue.enqueue(child)
 
-
     return k_ary_tree
-
-
 
 
 
