@@ -40,6 +40,12 @@ def test_fizz_buzz_fun_returns_fizz():
 
     assert actual == expected
 
+def test_fizz_buzz_fun_returns_buzz():
+    expected = "Buzz"
+    actual = fizz_buzz(5)
+
+    assert actual == expected
+
 @pytest.fixture
 def new_tree():
     node4 =TreeNode(4)
