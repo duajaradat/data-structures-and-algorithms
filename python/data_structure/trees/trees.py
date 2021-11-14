@@ -136,3 +136,15 @@ class BinarySearch(BinaryTree):
             return walk(self.root)
 
 
+if __name__ == '__main__':
+    tree = BinaryTree()
+    node1=Node(5,3,6)
+    node2=Node(3,2,4)
+    node3=Node(6)
+    tree.root = node1
+    tree.left = node2
+    tree.right = node3
+    print(node1.data)
+    print(node1.left)
+    print(tree.root.data)
+    tree.pre_order()
