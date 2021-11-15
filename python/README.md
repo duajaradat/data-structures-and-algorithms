@@ -17,3 +17,4 @@
 |  Trees  |[Trees](https://github.com/duajaradat/data-structures-and-algorithms/blob/trees/python/data_structure/trees/README.md)                      |
 |  Breadth First Search  |[Breadth First Search](https://github.com/duajaradat/data-structures-and-algorithms/blob/tree-breadth-first/python/code_challenges/tree_breadth/README.md)                      |
 |  Insertion Sort  |[Insertion Sort](https://github.com/duajaradat/data-structures-and-algorithms/blob/insertion-sort/python/data_structure/sort/insertion/BLOG.md)                      |
+|  Merge Sort  |[Merge Sort]()                      |
