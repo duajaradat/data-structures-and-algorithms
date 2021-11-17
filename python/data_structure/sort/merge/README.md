@@ -8,7 +8,7 @@
 ## Links
 - [Pull Request](https://github.com/duajaradat/data-structures-and-algorithms/pull/43)
 
-- [Code]()
+- [Code](https://github.com/duajaradat/data-structures-and-algorithms/blob/quick-sort/python/data_structure/sort/merge/merge.py)
 
 ### Problem Domain
 
