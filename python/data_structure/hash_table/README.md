@@ -6,13 +6,16 @@
 ---
 
 ## Links
-- [Pull Request]()
+- [Pull Request](https://github.com/duajaradat/data-structures-and-algorithms/pull/45)
 
-- [Code]()
+- [Code](https://github.com/duajaradat/data-structures-and-algorithms/blob/hashtable/python/data_structure/hash_table/hashtable.py)
 
-- [BLOG]()
+
+---
 
 ### Problem Domain
+
+Challenge Type: New Implementation
 
 **Implementation**
 
