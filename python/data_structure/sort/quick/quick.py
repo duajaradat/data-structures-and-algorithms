@@ -15,7 +15,7 @@ def quick_sort(arr, left=0, right=None):
         position = partition(arr, left, right)
         quick_sort(arr, left, (position - 1))
         quick_sort(arr, (position + 1), right)
-
+    return arr
 
 def partition(arr, left, right):
     """

@@ -8,9 +8,9 @@
 ## Links
 - [Pull Request](https://github.com/duajaradat/data-structures-and-algorithms/pull/44)
 
-- [Code]()
+- [Code](https://github.com/duajaradat/data-structures-and-algorithms/blob/quick-sort/python/data_structure/sort/quick/quick.py)
 
-- [BLOG]()
+- [BLOG](https://github.com/duajaradat/data-structures-and-algorithms/blob/quick-sort/python/data_structure/sort/quick/BLOG.md)
 
 ### Problem Domain
 
