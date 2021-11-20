@@ -18,3 +18,4 @@
 |  Breadth First Search  |[Breadth First Search](https://github.com/duajaradat/data-structures-and-algorithms/blob/tree-breadth-first/python/code_challenges/tree_breadth/README.md)                      |
 |  Insertion Sort  |[Insertion Sort](https://github.com/duajaradat/data-structures-and-algorithms/blob/insertion-sort/python/data_structure/sort/insertion/BLOG.md)                      |
 |  Merge Sort  |[Merge Sort](https://github.com/duajaradat/data-structures-and-algorithms/blob/merge-sort/python/data_structure/sort/merge/README.md)                      |
+|  Quick Sort  |[Quick Sort](https://github.com/duajaradat/data-structures-and-algorithms/tree/quick-sort/python/data_structure/sort/quick)                      |

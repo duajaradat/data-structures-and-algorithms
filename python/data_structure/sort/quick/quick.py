@@ -1,5 +1,13 @@
 def quick_sort(arr, left=0, right=None):
-
+    """
+    Sort a list of integers in ascending order
+    Args:
+        arr (int): list
+        left (int): number
+        right (int): number
+    Returns :
+     a sorted list
+    """
     if right == None:
         right = len(arr) - 1
 
@@ -10,7 +18,16 @@ def quick_sort(arr, left=0, right=None):
 
 
 def partition(arr, left, right):
+    """
+    Sets a pivot which is a value in the partitioning space to find a position
 
+    Args:
+        arr (int)
+        left (int)
+        right (int)
+
+    Returns: pivot index
+    """
     pivot = arr[right]
     low = left - 1
 
@@ -24,6 +41,14 @@ def partition(arr, left, right):
 
 
 def swap(arr, i, low):
+    """Swaping the location of two indexes i , low
+
+    Args:
+        arr (int)
+        i (int)
+        low (int)
+    Returns: None
+    """
     temp = arr[i]
     arr[i] = arr[low]
     arr[low] = temp

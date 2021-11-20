@@ -10,6 +10,8 @@
 
 - [Code]()
 
+- [BLOG]()
+
 ### Problem Domain
 
 **Implementation**
@@ -34,20 +36,12 @@
 
 || Time | Space |
 |:-----------| :----------- | :----------- |
-|Merge Sort | O(n*log (n)) | O(n) |
-
+|Avg Case | O(n*log (n)) | O(1) |
+|Worst Case | O(n^2) | O(1) |
 ---
-
-## Steps to  do Merge Sort
-for the example in the WhiteBoard :
-```python
-arr = [8,4,23,42,16,15]
-```
-**Given unsorted list of elements.**
-
 
 
 ### Whiteboard Visual
 ***[Quick Sort]***
-![Quick Sort]()
-
+![Quick Sort](quick1.jpg)
+![Quick Sort](quick2.jpg)
