@@ -19,3 +19,4 @@
 |  Insertion Sort  |[Insertion Sort](https://github.com/duajaradat/data-structures-and-algorithms/blob/insertion-sort/python/data_structure/sort/insertion/BLOG.md)                      |
 |  Merge Sort  |[Merge Sort](https://github.com/duajaradat/data-structures-and-algorithms/blob/merge-sort/python/data_structure/sort/merge/README.md)                      |
 |  Quick Sort  |[Quick Sort](https://github.com/duajaradat/data-structures-and-algorithms/tree/quick-sort/python/data_structure/sort/quick)                      |
+|  Hash Table  |[Hash Table](https://github.com/duajaradat/data-structures-and-algorithms/tree/hashtable/python/data_structure/hash_table)                      |

@@ -43,12 +43,12 @@ Implement a Hashtable Class with the following methods:
 
 Write tests to prove the following functionality:
 
-- [] Adding a key/value to your hashtable results in the   value being in the data structure
-- []Retrieving based on a key returns the value stored
-- []Successfully returns null for a key that does not exist in the hashtable
-- []Successfully handle a collision within the hashtable
-- []Successfully retrieve a value from a bucket within the hashtable that has a collision
-- []Successfully hash a key to an in-range value
+- [x] Adding a key/value to your hashtable results in the   value being in the data structure
+- [x]Retrieving based on a key returns the value stored
+- [x]Successfully returns null for a key that does not exist in the hashtable
+- [x]Successfully handle a collision within the hashtable
+- [x]Successfully retrieve a value from a bucket within the hashtable that has a collision
+- [x]Successfully hash a key to an in-range value
 
 
 ---
@@ -58,12 +58,8 @@ Write tests to prove the following functionality:
 
 || Time | Space |
 |:-----------| :----------- | :----------- |
-|Hash Table | O() | O() |
-
----
-
-
-### Whiteboard Visual
-***[Hash Table]***
-![Hash Table]()
-
+|hash| O(1) | O(1) |
+|add| O(1) | O(1) |
+|get| O(n) | O(1) |
+|contains| O(n) | O(1) |
+|remove| O(n) | O(1) |
