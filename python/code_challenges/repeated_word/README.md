@@ -11,7 +11,7 @@
 
 - [Pull Request](https://github.com/duajaradat/data-structures-and-algorithms/pull/46)
 - [See The Code](repeated_word.py)
-- [See The Tests](../tests/test_hashtable_repeated_word.py)
+- [See The Tests](https://github.com/duajaradat/data-structures-and-algorithms/blob/hashmap-repeated-word/python/tests/test_hashtable_repeated_word.py)
 
 ---
 
