@@ -59,7 +59,8 @@ class HashTable:
         Returns : boolean
         """
         index = self.__hash(key)
-
+        if not self.buckets[index]:
+            return False
         current = self.buckets[index].head
         while current:
             if current.value[0] == key:
