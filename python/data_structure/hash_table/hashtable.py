@@ -22,7 +22,7 @@ class HashTable:
         hash_value=0
         for char in key:
             hash_value+=ord(char)
-        return hash_value % self.size
+        return hash_value*7 % self.size
 
     def add(self, key, value):
         """
@@ -45,7 +45,7 @@ class HashTable:
         """
         index = self.__hash(key)
         if not self.buckets[index]:
-            return None
+            raise KeyError("Key not found")
         current = self.buckets[index].head
         while current:
             if current.value[0] == key:
@@ -59,6 +59,9 @@ class HashTable:
         Returns : boolean
         """
         index = self.__hash(key)
+
+        if not self.buckets[index]:
+            return False
 
         current = self.buckets[index].head
         while current:

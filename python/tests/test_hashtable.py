@@ -17,7 +17,7 @@ def test_instantiate_hash_table():
 def test_return_index_hash():
     # Arrange
     ht = HashTable()
-    expected = 448
+    expected = 64
     # Act
     actual = ht._HashTable__hash('test')
     # Assert
@@ -57,7 +57,8 @@ def test_get_value_for_present_key():
 
 def test_get_none_for_not_present_key():
     ht = HashTable()
-    assert ht.get("ahmad") is None
+    with pytest.raises(KeyError):
+        assert ht.get("ahmad")
 
 def test_get_value_in_LL_key():
     # Arrange
