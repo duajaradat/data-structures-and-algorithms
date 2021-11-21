@@ -10,7 +10,7 @@
 ## Links
 
 - [Pull Request](https://github.com/duajaradat/data-structures-and-algorithms/pull/46)
-- [See The Code](hashtable_repeated_word.py)
+- [See The Code](repeated_word.py)
 - [See The Tests](../tests/test_hashtable_repeated_word.py)
 
 ---
