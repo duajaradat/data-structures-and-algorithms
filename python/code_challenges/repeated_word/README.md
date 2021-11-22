@@ -40,7 +40,7 @@ Write at least three test assertions for each method that you define.
 
 ### Big O:
 
-- Time : O(n)
+- Time : O(n^2)
 
 - Space : O(1)
 
