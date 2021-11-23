@@ -4,6 +4,7 @@ from tree_intersection.tree_intersection import common_values
 
 def test_will_return_none():
     tree_one = BinaryTree()
+    tree_two = BinaryTree()
     assert common_values(tree_one, tree_two) == None
 
 def test_return_common_values(tree_one,tree_two):
@@ -22,6 +23,7 @@ def tree_one():
     six = Node(300)
     seven = Node(350)
     eight = Node(400)
+
     tree = BinaryTree()
     tree.root =one
     one.left = two
@@ -43,6 +45,7 @@ def tree_two():
     six = Node(300)
     seven = Node(350)
     eight = Node(400)
+
     tree = BinaryTree()
     tree.root = one
     one.left = two
