@@ -35,14 +35,14 @@
 
 || Time | Space |
 |:-----------| :----------- | :----------- |
-|| O() | O() |
+|| O(n) | O(n) |
 
 ---
 
 
 ### Whiteboard Visual
 ***[Tree Intersection]***
-![]()
+![Tree Intersection](tree-intersection.jpg)
 
 
 
