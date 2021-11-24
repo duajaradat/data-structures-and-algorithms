@@ -13,8 +13,11 @@ def common_values(tree_one,tree_two):
         nonlocal hashtable
         if node:
             hashtable.add(str(node.data),node.data)
-            walk_one(node.left)
-            walk_one(node.right)
+            if node.left:
+                walk_one(node.left)
+            if node.right:
+                walk_one(node.right)
+
 
     walk_one(tree_one.root)
 
@@ -24,10 +27,10 @@ def common_values(tree_one,tree_two):
         if node:
             if hashtable.contains(str(node.data)):
                 result_values.append(node.data)
-            walk_two(node.left)
-            walk_two(node.right)
+            if node.left:
+                walk_two(node.left)
+            if node.right:
+                walk_two(node.right)
 
     walk_two(tree_two.root)
-
-    print(result_values)
-
+    return result_values
