@@ -48,10 +48,10 @@
 
 || Time | Space |
 |:-----------| :----------- | :----------- |
-|   | O()      |  O()         |
+|   | O(n2)      |  O(n2)         |
 ---
 
 
 ### Whiteboard Visual
 ***[LEFT JOIN]***
-![]()
+![Left Join](left-join.jpg)
