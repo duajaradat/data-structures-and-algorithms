@@ -3,12 +3,18 @@
 ## Author
 *Du'a Jaradat*
 
+## Collaboratores
+
+*Haneen*
+*Tasneem*
+*Mona*
+
 ---
 
 ## Links
 - [Pull Request](https://github.com/duajaradat/data-structures-and-algorithms/pull/48)
 
-- [Code]()
+- [Code](https://github.com/duajaradat/data-structures-and-algorithms/blob/hashmap-left-join/python/code_challenges/hashmap_left_join/hashmap_left_join.py)
 
 ### Problem Domain
 
