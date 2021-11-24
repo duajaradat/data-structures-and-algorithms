@@ -6,7 +6,7 @@ def left_join(hashmap_one :HashTable, hashmap_two :HashTable):
     """
     output = []
 
-    if not len(hashmap_one.buckets) or not len(hashmap_two.buckets):
+    if  not len(hashmap_one.buckets)  and not len(hashmap_two.buckets) :
         return []
 
     for i in range(len(hashmap_one.buckets)):
