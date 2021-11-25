@@ -23,3 +23,4 @@
 |  HashTable Repeadted Word |[HashTable Repeadted Word](https://github.com/duajaradat/data-structures-and-algorithms/tree/hashmap-repeated-word/python/code_challenges/repeated_word)                      |
 |  Tree Intersection |[Tree Intersection](https://github.com/duajaradat/data-structures-and-algorithms/tree/tree-intersection/python/tree_intersection)                      |
 | Left Join  |[Left Join](https://github.com/duajaradat/data-structures-and-algorithms/tree/hashmap-left-join/python/code_challenges/hashmap_left_join)                     |
+| Graph  |[Graph](https://github.com/duajaradat/data-structures-and-algorithms/tree/graph/python/data_structure/graph)                     |
