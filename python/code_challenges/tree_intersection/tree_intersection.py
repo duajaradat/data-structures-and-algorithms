@@ -2,7 +2,11 @@ from data_structure.hash_table.hashtable import HashTable
 
 
 def common_values(tree_one ,tree_two):
-
+    """
+    function to find the common values between two trees
+    Args : tree_one  and tree_two (binary tree)
+    Returns : list of common values
+    """
     if not tree_one.root  or not tree_two.root :
         return None
 
@@ -10,6 +14,11 @@ def common_values(tree_one ,tree_two):
     result_values = []
 
     def walk_one(node):
+        """
+        function to walk through the tree and add the values to the hashtable
+        Args : node (root of the tree)
+        Returns : None
+        """
 
         if node:
             hashtable.add(str(node.data),node.data)
@@ -22,6 +31,11 @@ def common_values(tree_one ,tree_two):
     walk_one(tree_one.root)
 
     def walk_two(node):
+        """
+        function to walk through the tree and check if the values are in the hashtable
+        Args : node (node of the tree)
+        Returns : list of common values
+        """
 
         if node:
             if hashtable.contains(str(node.data)):

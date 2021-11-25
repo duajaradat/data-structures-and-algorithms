@@ -1,6 +1,6 @@
 import pytest
 from data_structure.trees.trees import BinaryTree,Node
-from tree_intersection.tree_intersection import common_values
+from code_challenges.tree_intersection.tree_intersection import common_values
 
 def test_will_return_none():
     tree1 = BinaryTree()
