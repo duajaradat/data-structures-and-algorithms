@@ -88,28 +88,6 @@ class Graph:
         """
         return len(self._adjacency_list)
 
-    def bfs(self, vertex):
-        """
-        Perform a breadth first search on the graph
-        Arguments: vertex
-        Returns: None
-        """
-        visited = set()
-        breadth = Queue()
-        nodes = []
-        breadth.enqueue(vertex)
-        visited.add(vertex)
-
-        while not breadth.isEmpty() :
-            front = breadth.dequeue()
-            nodes.append(front.value)
-            for edge in self.get_neighbors(front):
-                if edge.vertex not in visited:
-                    visited.add(edge.vertex)
-                    breadth.enqueue(edge.vertex)
-
-
-        return nodes
 
 
 

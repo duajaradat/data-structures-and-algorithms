@@ -72,16 +72,5 @@ def test_edges_in_graph():
     assert edge2.vertex == v3
     assert edge2.weight == 2
 
-def test_bfs_graph():
-    graph = Graph()
-    v1 = Vertex(1)
-    v2 = Vertex(2)
-    v3 = Vertex(3)
-    graph.add_node(v1)
-    graph.add_node(v2)
-    graph.add_node(v3)
-    graph.add_edge(v1, v2, 1)
-    graph.add_edge(v1, v3, 2)
-    actual = graph.bfs(v1)
-    assert actual == [1, 2, 3]
+
 
