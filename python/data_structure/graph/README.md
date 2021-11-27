@@ -73,4 +73,4 @@ Write tests to prove the following functionality:
 |add edge| O(1) | O(n) |
 |get nodes| O(n) | O(n) |
 |get neighbors| O(n) | O(n) |
-|bfs| O(v+e) | O(n) |
+
