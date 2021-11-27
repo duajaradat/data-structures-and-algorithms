@@ -8,7 +8,7 @@
 ## Links
 - [Pull Request](https://github.com/duajaradat/data-structures-and-algorithms/pull/49)
 
-- [Code]()
+- [Code](https://github.com/duajaradat/data-structures-and-algorithms/blob/graph/python/data_structure/graph/graph.py)
 
 
 ---
@@ -69,8 +69,8 @@ Write tests to prove the following functionality:
 
 || Time | Space |
 |:-----------| :----------- | :----------- |
-|add node| O() | O() |
-|add edge| O() | O() |
-|get nodes| O() | O() |
-|get neighbors| O() | O() |
-|size| O() | O() |
+|add node| O(1) | O(n) |
+|add edge| O(1) | O(n) |
+|get nodes| O(n) | O(n) |
+|get neighbors| O(n) | O(n) |
+|bfs| O(v+e) | O(n) |
