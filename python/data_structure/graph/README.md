@@ -10,7 +10,7 @@
 
 - [Code](https://github.com/duajaradat/data-structures-and-algorithms/blob/graph/python/data_structure/graph/graph.py)
 
-
+- [Pull Request for BFS ](https://github.com/duajaradat/data-structures-and-algorithms/pull/50)
 ---
 
 ### Problem Domain
@@ -75,7 +75,11 @@ Write the following method for the Graph class:
  - Display the collection
 
 ---
+## White Board Process
 
+![BFS Graph](bfs-graph.jpg)
+
+---
 ### Big O Analysis
 
 
