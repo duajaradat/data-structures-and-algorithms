@@ -7,15 +7,14 @@ def business_trip(cities_names,graph):
     Returns : boolen , cost
 
     """
-    if len(cities_names)>1:
-        if (cities_names[0]in list(graph.get_nodes())) and (cities_names[1] in list(graph.get_nodes())):
-            neighbors = graph.get_neighbors(cities_names[1])
-            if neighbors:
-                for neighbor in neighbors:
-                    if cities_names[0] == neighbor.vertex:
-                        return True , f"${neighbor.weight}"
+    trip_cost = 0
+    for i in range(len(cities_names)-1):
+        for city in graph.get_neighbors(cities_names[i]):
+            if cities_names[i+1] == city[0]:
+                trip_cost += city[1]
+            else:
+                return False , "$0"
+        return True , f"$ {trip_cost}"
 
-                    else:
-                        return False , "$0"
 
 
