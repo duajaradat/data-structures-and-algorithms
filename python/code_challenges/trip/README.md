@@ -4,16 +4,15 @@
 *Du'a Jaradat*
 
 ## Collaboratores :
-*Tahany Ali*
+*Faisal*
 *Haneen*
-*Tasneem*
-*Mona*
+*Jehad*
 ---
 
 ## Links
 - [Pull Request](https://github.com/duajaradat/data-structures-and-algorithms/pull/51)
 
-- [Code]()
+- [Code](https://github.com/duajaradat/data-structures-and-algorithms/blob/graph-business-trip/python/code_challenges/trip/trip.py)
 
 ### Feature Tasks
 
@@ -36,14 +35,14 @@ Determine whether the trip is possible with direct flights, and how much it woul
 
 || Time | Space |
 |:-----------| :----------- | :----------- |
-|| O() | O() |
+|| O(n) | O(1) |
 
 ---
 
 
 ### Whiteboard Visual
-***[]***
-![]()
+***[Trip]***
+![Trip]()
 
 
 
