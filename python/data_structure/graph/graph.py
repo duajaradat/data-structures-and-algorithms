@@ -114,3 +114,22 @@ class Graph:
         return nodes
 
 
+    def dfs(self, vertex):
+        """
+        Perform a depth first search on the graph in pre order traversal
+        Arguments: vertex
+        Returns: collection of nodes
+        """
+        stack=Stack()
+        visited = set()
+        nodes = []
+        stack.push(vertex)
+        while stack:
+            current = stack.pop()
+            if current not in visited:
+                visited.add(current)
+                nodes.append(current.value)
+                for neighbors in self._adjacency_list[current]:
+                    stack.push(neighbors.vertex)
+        return nodes
+
