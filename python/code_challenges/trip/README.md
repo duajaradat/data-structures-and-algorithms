@@ -42,7 +42,7 @@ Determine whether the trip is possible with direct flights, and how much it woul
 
 ### Whiteboard Visual
 ***[Trip]***
-![Trip](buisness_trip.jpg)
+![Trip](graph-business-trip.jpg)
 
 
 
