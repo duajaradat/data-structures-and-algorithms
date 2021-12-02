@@ -120,16 +120,21 @@ class Graph:
         Arguments: vertex
         Returns: collection of nodes
         """
-        stack=Stack()
+        pre_output = []
         visited = set()
-        nodes = []
-        stack.push(vertex)
-        while stack:
-            current = stack.pop()
-            if current not in visited:
-                visited.add(current)
-                nodes.append(current.value)
-                for neighbors in self._adjacency_list[current]:
-                    stack.push(neighbors.vertex)
-        return nodes
+        depth = Stack()
+        depth.push(vertex)
+        visited.add(vertex)
+
+        while not depth.isEmpty():
+            front = depth.pop()
+            pre_output.append(front.value)
+            for edge in self.get_neighbors(front):
+                if edge.vertex not in visited:
+                    visited.add(edge.vertex)
+                    depth.push(edge.vertex)
+
+        return pre_output
+
+
 
