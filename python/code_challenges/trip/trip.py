@@ -8,13 +8,21 @@ def business_trip(cities_names,graph):
 
     """
     trip_cost = 0
-    for i in range(len(cities_names)-1):
-        for city in graph.get_neighbors(cities_names[i]):
-            if cities_names[i+1] == city[0]:
-                trip_cost += city[1]
-            else:
-                return False , "$0"
-        return True , f"$ {trip_cost}"
+    for i , city in enumerate(cities_names):
+        if i <= len(cities_names) - 2:
+            neighbor_city = cities_names[i+1]
 
+            if city not in graph._adjacency_list or neighbor_city not in graph._adjacency_list:
+                return False, "$ 0"
+            flag = False
 
+            neighbors = graph.get_neighbors(city)
+            for edge in neighbors:
+                if edge.vertex == neighbor_city:
+                    flag = True
+                    trip_cost += edge.weight
 
+            if not flag:
+                return False, "$ 0"
+
+    return True, f"${trip_cost}"
