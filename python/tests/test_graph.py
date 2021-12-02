@@ -102,19 +102,19 @@ def test_bfs_with_root_Narina(bfs):
 
 # DFS tests
 
-# def test_dfs_graph():
-#     graph = Graph()
-#     v1 = Vertex(1)
-#     v2 = Vertex(2)
-#     v3 = Vertex(3)
-#     graph.add_node(v1)
-#     graph.add_node(v2)
-#     graph.add_node(v3)
-#     graph.add_edge(v1, v2, 1)
-#     graph.add_edge(v1, v3, 2)
-#     actual = graph.dfs(v1)
-#     assert actual == [1, 2, 3]
-#     assert graph.size() == 3
+def test_dfs_graph():
+    graph = Graph()
+    v1 = Vertex(1)
+    v2 = Vertex(2)
+    v3 = Vertex(3)
+    graph.add_node(v1)
+    graph.add_node(v2)
+    graph.add_node(v3)
+    graph.add_edge(v1, v2, 1)
+    graph.add_edge(v1, v3, 2)
+    actual = graph.dfs(v1)
+    assert actual == [1, 2, 3]
+    assert graph.size() == 3
 
 #
 @pytest.fixture
