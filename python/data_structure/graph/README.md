@@ -10,7 +10,7 @@
 
 - [Code](https://github.com/duajaradat/data-structures-and-algorithms/blob/graph/python/data_structure/graph/graph.py)
 
-
+- [Pull Request for BFS ](https://github.com/duajaradat/data-structures-and-algorithms/pull/50)
 ---
 
 ### Problem Domain
@@ -49,6 +49,7 @@ Implement your own Graph. The graph should be represented as an adjacency list, 
      - Arguments: none
      - Returns the total number of nodes in the graph
 
+---
 ### Structure and Testing
 
 Write tests to prove the following functionality:
@@ -64,6 +65,21 @@ Write tests to prove the following functionality:
 
 ---
 
+###  Feature Tasks
+
+Write the following method for the Graph class:
+
+ - breadth first
+ - Arguments: Node
+ - Return: A collection of nodes in the order they were visited.
+ - Display the collection
+
+---
+## White Board Process
+
+![BFS Graph](bfs-graph.jpg)
+
+---
 ### Big O Analysis
 
 
