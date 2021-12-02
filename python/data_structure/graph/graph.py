@@ -90,6 +90,51 @@ class Graph:
 
 
 
+    def bfs(self, vertex):
+        """
+        Perform a breadth first search on the graph
+        Arguments: vertex
+        Returns: None
+        """
+        visited = set()
+        breadth = Queue()
+        nodes = []
+        breadth.enqueue(vertex)
+        visited.add(vertex)
+
+        while not breadth.isEmpty() :
+            front = breadth.dequeue()
+            nodes.append(front.value)
+            for edge in self.get_neighbors(front):
+                if edge.vertex not in visited:
+                    visited.add(edge.vertex)
+                    breadth.enqueue(edge.vertex)
+
+
+        return nodes
+
+
+    def dfs(self, vertex):
+        """
+        Perform a depth first search on the graph in pre order traversal
+        Arguments: vertex
+        Returns: collection of nodes
+        """
+        pre_output = []
+        visited = set()
+        depth = Stack()
+        depth.push(vertex)
+        visited.add(vertex)
+
+        while not depth.isEmpty():
+            front = depth.pop()
+            pre_output.append(front.value)
+            for edge in self.get_neighbors(front):
+                if edge.vertex not in visited:
+                    visited.add(edge.vertex)
+                    depth.push(edge.vertex)
+
+        return pre_output
 
 
 
