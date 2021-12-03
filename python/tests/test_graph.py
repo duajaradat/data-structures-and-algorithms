@@ -141,6 +141,8 @@ def test_dfs_graph_test3():
     actual = graph.dfs(v2)
     assert actual == [2, 3]
     assert graph.size() == 3
+
+
 #
 @pytest.fixture
 def bfs():

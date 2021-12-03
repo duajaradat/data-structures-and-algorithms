@@ -103,3 +103,4 @@ Write the following method for the Graph class:
 |get nodes| O(n) | O(n) |
 |get neighbors| O(n) | O(n) |
 |bfs| O(v+e) | O(n) |
+|dfs| O(v+e) | O(n) |
